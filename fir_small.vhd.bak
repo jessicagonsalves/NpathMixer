@@ -1,0 +1,87 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.npath_package.all;
+entity fir_small is
+    generic (
+        n : natural := 4;
+        width_address : natural := 2;
+        width : natural := 8
+    );
+    port (
+        clk, clk_r : in std_logic;
+        vin : in std_logic_vector(width - 1 downto 0);
+        coeff : out real := 0.0;
+        vout, q_mux, q_mul, q_sum, q_tmp : out std_logic_vector(width - 1 downto 0)
+    );
+end fir_small;
+
+architecture behavior of fir_small is
+
+    signal address : std_logic_vector(width_address - 1 downto 0) := (others => '0');
+    signal q_s : bits_array_t(n - 1 downto 0) := (others => (others => '0'));
+    --signal q_mux, q_mul, q_sum, q_tmp : std_logic_vector(width - 1 downto 0) := (others => '0');
+    --signal coeff : real := 0.0;
+
+    component reg is
+        generic (
+            width : natural := 8
+        );
+        port (
+            clk : in std_logic;
+            d : in std_logic_vector(width - 1 downto 0) := (others => '0');
+            q : out std_logic_vector(width - 1 downto 0) := (others => '0')
+        );
+    end component;
+
+    component rom is
+        port (
+            address : in std_logic_vector(size_coefficient - 1 downto 0);
+            data : out real := 0.0
+        );
+    end component;
+
+    component mux is
+        generic (
+            width_address : natural := 2;
+            width : natural := 8
+        );
+        port (
+            a : in bits_array_t(width_address ** 2 - 1 downto 0);
+            address : in std_logic_vector(width_address - 1 downto 0);
+            b : out std_logic_vector(width - 1 downto 0)
+        );
+    end component;
+
+begin
+
+    reg_fir_n : reg generic map(width => width) port map(clk => clk, d => vin, q => q_s(n - 1));
+    out_assig : for i in n - 2 downto 0 generate
+        reg_fir : reg generic map(width => width) port map(clk => clk, d => q_s(i + 1), q => q_s(i));
+    end generate;
+
+    process (clk_r)
+    begin
+        if clk_r'EVENT and clk_r = '1' then
+            address <= std_logic_vector(unsigned(address) + 1);
+        end if;
+    end process;
+
+    mux_coeff : mux generic map(
+        width_address => width_address,
+        width => width
+        ) port map(
+        a => q_s,
+        address => address,
+        b => q_mux);
+
+    rom_coeff : rom port map(address => address, data => coeff);
+
+    q_mux <= std_logic_vector(to_unsigned(integer(real(to_integer(unsigned(q_mux))) * coeff), width));
+
+    q_sum <= std_logic_vector(unsigned(q_mux) + unsigned(q_tmp));
+
+    reg_temp : reg generic map(width => width) port map(clk => clk_r, d => q_sum, q => q_tmp);
+    reg_result : reg generic map(width => width) port map(clk => clk_r, d => q_tmp, q => vout);
+
+end behavior;

@@ -1,0 +1,3 @@
+vsim -gui work.sine_generator
+add wave -position insertpoint sim:/sine_generator/*
+run

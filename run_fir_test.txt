@@ -1,0 +1,3 @@
+vsim -gui work.fir_test
+add wave -position insertpoint sim:/fir_test/*
+run
