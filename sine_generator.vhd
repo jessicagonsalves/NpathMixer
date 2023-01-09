@@ -23,8 +23,8 @@ architecture behavior of sine_generator is
     function quantization_sgn(width : integer; max_abs : real; dval : real) return std_logic_vector is
         variable temp : std_logic_vector(width - 1 downto 0) := (others => '0');
         constant scale : real := (2.0 ** (real(width - 1)))/max_abs;
-        constant minq : integer := - (2 ** (width - 1));
-        constant maxq : integer := + (2 ** (width - 1)) - 1;
+        constant minq : integer := - (2 ** (width - 1)) + 1; -- -128
+        constant maxq : integer := + (2 ** (width - 1)) - 1; -- 127
         variable itemp : integer := 0;
 
     begin
@@ -55,7 +55,7 @@ begin
 
         variable count : integer := 0;
         variable v_sine : real := 0.0;
-        variable v_tstep : real := 0.0;
+        variable v_tstep : real := 0.67;
         variable v_qsine_sgn : std_logic_vector(width - 1 downto 0) := (others => '0');
 
     begin

@@ -6,7 +6,8 @@ use ieee.fixed_pkg.all;
 
 entity fir_test is
 	generic (
-		n : natural := n_coefficients;
+		n : natural := n_phases;
+		n_coeff : natural := n_coefficients;
 		width : natural := n_bits;
 		width_samples : natural := 5;
 		clk_period : time := clk_period_smp
@@ -59,12 +60,12 @@ architecture behavior of fir_test is
 
 begin
 
-	clock : clock_generator generic map(clk_period => clk_period) port map(clk => clk);
+	clock_phase : clock_generator generic map(clk_period => clk_period/n) port map(clk => clk);
 	clock_sine : clock_generator generic map(clk_period => clk_period/(4 * width)) port map(clk => clk_sine);
 	sine_gen : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_sine, qsine_sgn => vin);
 
 	fir_one : fir_basic generic map(
-		n => n,
+		n => n_coeff,
 		width => width
 	) port map(clk => clk, vin => vin, vout => vout, vout_s => vout_s);
 

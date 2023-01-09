@@ -4,7 +4,7 @@ force -freeze sim:/fir_test/vin_s 00010001 0
 run
 force -freeze sim:/fir_test/vin_s 00010101 0
 run
-force -freeze sim:/fir_test/vin_s 00001010 0
+force -freeze sim:/fir_test/vin_s 00010100 0
 run
 force -freeze sim:/fir_test/vin_s 00000101 0
 run
