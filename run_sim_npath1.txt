@@ -1,0 +1,3 @@
+vsim -gui work.npath_one
+add wave -position insertpoint sim:/npath_one/*
+run

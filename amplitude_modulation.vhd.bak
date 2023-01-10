@@ -6,7 +6,8 @@ library std;
 use ieee.std_logic_textio.all;
 use std.textio.all;
 use work.npath_package.all;
-entity sine_generator is
+
+entity amplitude_modulation is
     generic (
         width : integer := n_bits;
         nsamples : integer := 5 -- LOG2 OF THE VALUE
@@ -16,9 +17,9 @@ entity sine_generator is
         sine : out real := 0.0;
         qsine_sgn : out std_logic_vector(width - 1 downto 0) := (others => '0')
     );
-end sine_generator;
+end amplitude_modulation;
 
-architecture behavior of sine_generator is
+architecture behavior of amplitude_modulation is
 
     function quantization_sgn(width : integer; max_abs : real; dval : real) return std_logic_vector is
         variable temp : std_logic_vector(width - 1 downto 0) := (others => '0');

@@ -3,29 +3,29 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.npath_package.all;
 
-entity npath_one is
+entity npath_one_am is
     generic (
         clk_period : time := clk_period_smp;
         n : natural := n_phases;
         n_coeff : natural := n_coefficients;
         width_samples : natural := 5;
-        width : natural := n_bits
+        width : natural := n_bits;
+        width_op : natural := 2 * n_bits + log2(n_bits)
     );
     port (
-        vout_s : out std_logic_vector(18 downto 0) := (others => '0');
+        vout_s : out std_logic_vector(width_op - 1 downto 0) := (others => '0');
         vout : out std_logic_vector(width - 1 downto 0)
     );
-end npath_one;
+end npath_one_am;
 
-architecture behavior of npath_one is
+architecture behavior of npath_one_am is
 
-    constant width_op : natural := 2 * width + log2(width);
-    signal clk, clk_sine : std_logic;
+    signal clk, clk_carrier : std_logic;
+    signal vin, vout_info, vout_carrier : std_logic_vector(width - 1 downto 0) := (others => '0');
     signal phg : std_array(n - 1 downto 0) := (others => '0');
     type bitsPlus_array_t is array (natural range <>) of std_logic_vector(width downto 0);
     signal reg_out_array : bitsPlus_array_t(n - 1 downto 0) := (others => (others => '0'));
     type n_array_t is array (natural range <>) of std_logic_vector(width_op - 1 downto 0);
-    signal vin : std_logic_vector(width - 1 downto 0) := (others => '0');
     signal q_sub1, q_sub2 : std_logic_vector(width downto 0) := (others => '0');
     signal q_sum, q_out, q_sub1_ext, q_sub2_ext : std_logic_vector(width + 1 downto 0) := (others => '0');
     signal q_out_s : std_logic_vector(width_op + 1 downto 0) := (others => '0');
@@ -75,12 +75,24 @@ architecture behavior of npath_one is
         );
     end component;
 
+    component amplitude_modulation is
+        generic (
+            width : integer := n_bits;
+            nsamples : integer := 5 -- LOG2 OF THE VALUE
+        );
+        port (
+            clk_info, clk_carrier : in std_logic;
+            vout : out std_logic_vector(2 * width - 1 downto 0) := (others => '0')
+        );
+    end component;
+
 begin
     clock : clock_generator generic map(clk_period => clk_period) port map(clk => clk);
-    clock_sine : clock_generator generic map(clk_period => clk_period/(4 * width)) port map(clk => clk_sine);
-    phase : phase_generator generic map(clk_period => clk_period, n => n_phases) port map(clk => phg);
-    sine_gen : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_sine, qsine_sgn => vin);
-
+    clk_gen_carrier : clock_generator generic map(clk_period => clk_period/(2 * width)) port map(clk => clk_carrier);
+    phase : phase_generator generic map(clk_period => clk_period/(2 * width), n => n_phases) port map(clk => phg);
+    am_gen : amplitude_modulation generic map(width => width/2, nsamples => width_samples) port map(clk_info => clk, clk_carrier => clk_carrier, vout => vin);
+    sine_gen_info : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk, qsine_sgn => vout_info);
+    sine_gen_carrier : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_carrier, qsine_sgn => vout_carrier);
     -- arrangment one
     filtering : for i in 0 to n - 1 generate
         process (phg(i))
@@ -100,8 +112,7 @@ begin
         n => n_coeff,
         width => width + 2,
         width_op => 2 * width + log2(width) + 2
-    ) port map(clk => clk
-    , vin => q_sum, vout => q_out, vout_s => q_out_s);
+    ) port map(clk => clk, vin => q_sum, vout => q_out, vout_s => q_out_s);
     vout <= q_out(width) & q_out(width - 2 downto 0);
     vout_s <= q_out_s(width_op) & q_out_s(width_op - 2 downto 0);
 
