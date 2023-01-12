@@ -3,21 +3,17 @@ use ieee.std_logic_1164.all;
 use ieee.fixed_pkg.all;
 package npath_package is
 
-    constant size_coefficient : natural := 3;
+    constant size_coefficient : natural := 2;
     constant n_coefficients : natural := 2 ** size_coefficient;
     constant n_phases : natural := 4;
-    constant n_bits : natural := 16;
+    constant n_bits : natural := 8;
     constant n_integer : natural := 2;
     type mem is array (n_coefficients - 1 downto 0) of sfixed(n_integer - 1 downto n_integer - 8);
     constant my_rom : mem := (
         0 => "11111010", -- -0.1
         1 => "00010101", -- 0.34059
         2 => "00100001", -- 0.530707
-        3 => "00011100", -- 0.34059
-        4 => "11111010", -- -0.1
-        5 => "00010101", -- 0.34059
-        6 => "00100001", -- 0.530707
-        7 => "00011100" -- 0.34059
+        3 => "00011100" -- 0.34059
     );
     -- constant my_rom : mem := (
     --     0 => "00000101", -- 0.0823799983546885

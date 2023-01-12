@@ -1,8 +1,6 @@
-# Reading pref.tcl
-# Loading project npath
-vsim -gui work.npath_one
-# vsim -gui work.npath_one 
-# Start time: 22:02:21 on Jan 05,2023
+vsim -gui work.npath_stimulus
+# vsim -gui work.npath_stimulus 
+# Start time: 16:14:25 on Jan 12,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -12,222 +10,51 @@ vsim -gui work.npath_one
 # Loading ieee.fixed_generic_pkg(body)
 # Loading ieee.fixed_pkg
 # Loading work.npath_package(body)
-# Loading work.npath_one(behavior)
+# Loading work.npath_stimulus(behavior)
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
-# Loading work.fir_basic(behavior)
-add wave -position insertpoint sim:/npath_one/*
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of npath_package.vhd was successful with warnings.
-# Compile of clock_generator.vhd was successful with warnings.
-# Compile of phase_generator.vhd was successful with warnings.
-# Compile of sine_generator.vhd was successful.
-# Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
-# Compile of fir_test.vhd was successful with warnings.
-# Compile of reg.vhd was successful.
-# Compile of fir_small.vhd was successful.
-# Compile of fir_test_two.vhd was successful with warnings.
-# Compile of npath_one.vhd failed with 1 errors.
-# 11 compiles, 1 failed with 1 error.
-# Compile of npath_package.vhd was successful with warnings.
-# Compile of clock_generator.vhd was successful with warnings.
-# Compile of phase_generator.vhd was successful with warnings.
-# Compile of sine_generator.vhd was successful.
-# Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd failed with 6 errors.
-# Compile of fir_test.vhd was successful with warnings.
-# Compile of reg.vhd was successful.
-# Compile of fir_small.vhd was successful.
-# Compile of fir_test_two.vhd was successful with warnings.
-# Compile of npath_one.vhd was successful with warnings.
-# 11 compiles, 1 failed with 6 errors.
-# Compile of npath_package.vhd was successful with warnings.
-# Compile of clock_generator.vhd was successful with warnings.
-# Compile of phase_generator.vhd was successful with warnings.
-# Compile of sine_generator.vhd was successful.
-# Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
-# Compile of fir_test.vhd was successful with warnings.
-# Compile of reg.vhd was successful.
-# Compile of fir_small.vhd was successful.
-# Compile of fir_test_two.vhd was successful with warnings.
-# Compile of npath_one.vhd was successful with warnings.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.fir_test
-# End time: 22:18:13 on Jan 05,2023, Elapsed time: 0:15:52
-# Errors: 0, Warnings: 4
-# vsim -gui work.fir_test 
-# Start time: 22:18:13 on Jan 05,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading ieee.fixed_generic_pkg(body)
-# Loading ieee.fixed_pkg
-# Loading work.npath_package(body)
-# Loading work.fir_test(behavior)
-# Loading work.clock_generator(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading work.sine_generator(behavior)
-# Loading work.fir_basic(behavior)
-add wave -position insertpoint sim:/fir_test/*
-run
-
-vsim -gui work.npath_one
-# End time: 22:18:42 on Jan 05,2023, Elapsed time: 0:00:29
-# Errors: 0, Warnings: 1
-# vsim -gui work.npath_one 
-# Start time: 22:18:42 on Jan 05,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading ieee.fixed_generic_pkg(body)
-# Loading ieee.fixed_pkg
-# Loading work.npath_package(body)
+# Loading work.amplitude_modulation(behavior)
 # Loading work.npath_one(behavior)
+# Loading work.fir_basic(behavior)
+# Loading work.npath_two(behavior)
+add wave -position insertpoint sim:/npath_stimulus/*
+run
+# Compile of npath_stimulus.vhd was successful with warnings.
+# Compile of npath_stimulus.vhd was successful with warnings.
+# Paste insertion failed: vsim: ** UI-Msg: (vish-4014) No objects found matching 'vsim'.
+# Paste insertion failed: -gui: Unrecognized option: "-gui" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: work.npath_stimulus: ** UI-Msg: (vish-4014) No objects found matching 'work.npath_stimulus'.
+# Paste insertion failed: add: ** UI-Msg: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: ** UI-Msg: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: ** UI-Msg: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed: run: ** UI-Msg: (vish-4014) No objects found matching 'run'.
+vsim -gui work.npath_stimulus
+# End time: 16:17:14 on Jan 12,2023, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 5
+# vsim -gui work.npath_stimulus 
+# Start time: 16:17:14 on Jan 12,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.npath_package(body)
+# Loading work.npath_stimulus(behavior)
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
-# Loading work.fir_basic(behavior)
-add wave -position insertpoint sim:/npath_one/*
-run
-# Compile of npath_package.vhd was successful with warnings.
-# Compile of clock_generator.vhd was successful with warnings.
-# Compile of phase_generator.vhd was successful with warnings.
-# Compile of sine_generator.vhd was successful.
-# Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
-# Compile of fir_test.vhd was successful with warnings.
-# Compile of reg.vhd was successful.
-# Compile of fir_small.vhd was successful.
-# Compile of fir_test_two.vhd was successful with warnings.
-# Compile of npath_one.vhd was successful with warnings.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.fir_test
-# End time: 22:20:18 on Jan 05,2023, Elapsed time: 0:01:36
-# Errors: 0, Warnings: 2
-# vsim -gui work.fir_test 
-# Start time: 22:20:18 on Jan 05,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading ieee.fixed_generic_pkg(body)
-# Loading ieee.fixed_pkg
-# Loading work.npath_package(body)
-# Loading work.fir_test(behavior)
-# Loading work.clock_generator(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading work.sine_generator(behavior)
-# Loading work.fir_basic(behavior)
-add wave -position insertpoint sim:/fir_test/*
-run
-
-# Compile of npath_package.vhd was successful with warnings.
-# Compile of clock_generator.vhd was successful with warnings.
-# Compile of phase_generator.vhd was successful with warnings.
-# Compile of sine_generator.vhd was successful.
-# Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
-# Compile of fir_test.vhd was successful with warnings.
-# Compile of reg.vhd was successful.
-# Compile of fir_small.vhd was successful.
-# Compile of fir_test_two.vhd was successful with warnings.
-# Compile of npath_one.vhd was successful with warnings.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.npath_one
-# End time: 22:21:11 on Jan 05,2023, Elapsed time: 0:00:53
-# Errors: 0, Warnings: 2
-# vsim -gui work.npath_one 
-# Start time: 22:21:11 on Jan 05,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading ieee.fixed_generic_pkg(body)
-# Loading ieee.fixed_pkg
-# Loading work.npath_package(body)
+# Loading work.amplitude_modulation(behavior)
 # Loading work.npath_one(behavior)
-# Loading work.clock_generator(behavior)
-# Loading work.phase_generator(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading work.sine_generator(behavior)
 # Loading work.fir_basic(behavior)
-add wave -position insertpoint sim:/npath_one/*
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vsim -gui work.fir_test
-# End time: 22:22:18 on Jan 05,2023, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 1
-# vsim -gui work.fir_test 
-# Start time: 22:22:18 on Jan 05,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading ieee.fixed_generic_pkg(body)
-# Loading ieee.fixed_pkg
-# Loading work.npath_package(body)
-# Loading work.fir_test(behavior)
-# Loading work.clock_generator(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading work.sine_generator(behavior)
-# Loading work.fir_basic(behavior)
-add wave -position insertpoint sim:/fir_test/*
-run
-
-run
-run
-run
-run
-run
-run
+# Loading work.npath_two(behavior)
+add wave -position insertpoint sim:/npath_stimulus/*
 run

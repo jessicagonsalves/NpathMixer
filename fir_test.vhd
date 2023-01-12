@@ -13,6 +13,7 @@ entity fir_test is
 		clk_period : time := clk_period_smp
 	);
 	port (
+		vin_s: in std_logic_vector(width - 1 downto 0);
 		vout_s : out std_logic_vector(18 downto 0);
 		vout : out std_logic_vector(width - 1 downto 0)
 	);
@@ -35,15 +36,17 @@ architecture behavior of fir_test is
 
 	component fir_basic is
 		generic (
-			n : natural := 4;
-			width : natural := 8
-		);
-		port (
-			clk : in std_logic;
-			vin : in std_logic_vector(width - 1 downto 0);
-			vout_s : out std_logic_vector(18 downto 0) := (others => '0');
-			vout : out std_logic_vector(width - 1 downto 0)
-		);
+		width : natural := 8;
+		width_integer : natural := 2;
+		width_coeff : natural := 4;
+		width_op : natural := 19
+	);
+	port (
+		clk : in std_logic;
+		vin : in std_logic_vector(width - 1 downto 0);
+		vout_s : out std_logic_vector(width_op - 1 downto 0) := (others => '0');
+		vout : out std_logic_vector(width - 1 downto 0) := (others => '0')
+	);
 	end component;
 
 	component sine_generator is
@@ -60,13 +63,13 @@ architecture behavior of fir_test is
 
 begin
 
-	clock_phase : clock_generator generic map(clk_period => clk_period/n) port map(clk => clk);
+	clock_phase : clock_generator generic map(clk_period => clk_period) port map(clk => clk);
 	clock_sine : clock_generator generic map(clk_period => clk_period/(4 * width)) port map(clk => clk_sine);
 	sine_gen : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_sine, qsine_sgn => vin);
 
 	fir_one : fir_basic generic map(
-		n => n_coeff,
+		width_coeff => n_coeff,
 		width => width
-	) port map(clk => clk, vin => vin, vout => vout, vout_s => vout_s);
+	) port map(clk => clk, vin => vin_s, vout => vout, vout_s => vout_s);
 
 end behavior;

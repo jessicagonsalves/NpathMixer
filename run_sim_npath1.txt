@@ -1,3 +1,3 @@
-vsim -gui work.npath_one
-add wave -position insertpoint sim:/npath_one/*
+vsim -gui work.npath_stimulus
+add wave -position insertpoint sim:/npath_stimulus/*
 run
