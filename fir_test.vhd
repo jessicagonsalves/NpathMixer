@@ -2,25 +2,25 @@ library ieee;
 use ieee.std_logic_1164.all;
 library work;
 use work.npath_package.all;
-use ieee.fixed_pkg.all;
 
 entity fir_test is
 	generic (
-		n : natural := n_phases;
-		n_coeff : natural := n_coefficients;
+		width_phases : natural := n_phases;
+		width_coeff : natural := n_coefficients;
 		width : natural := n_bits;
 		width_samples : natural := 5;
 		clk_period : time := clk_period_smp
 	);
 	port (
-		vin_s: in std_logic_vector(width - 1 downto 0);
-		vout_s : out std_logic_vector(18 downto 0);
+		vin_s : in std_logic_vector(width - 1 downto 0);
+		vout_s : out std_logic_vector(12 downto 0);
 		vout : out std_logic_vector(width - 1 downto 0)
 	);
 end fir_test;
 
 architecture behavior of fir_test is
-
+	constant width_rom : natural := 8;
+	constant width_ext : natural := (width + width_rom) + log2(width_coeff) + log2(width_phases);
 	signal vin : std_logic_vector(width - 1 downto 0) := (others => '0');
 	signal clk, clk_sine : std_logic;
 
@@ -36,17 +36,15 @@ architecture behavior of fir_test is
 
 	component fir_basic is
 		generic (
-		width : natural := 8;
-		width_integer : natural := 2;
-		width_coeff : natural := 4;
-		width_op : natural := 19
-	);
-	port (
-		clk : in std_logic;
-		vin : in std_logic_vector(width - 1 downto 0);
-		vout_s : out std_logic_vector(width_op - 1 downto 0) := (others => '0');
-		vout : out std_logic_vector(width - 1 downto 0) := (others => '0')
-	);
+			width : natural := 8;
+			width_coeff : natural := 4;
+			width_ext : natural := 20
+		);
+		port (
+			clk : in std_logic;
+			vin : in std_logic_vector(width - 1 downto 0);
+			vout : out std_logic_vector(width_ext - n_rom + n_integer - 1 downto 0) := (others => '0')
+		);
 	end component;
 
 	component sine_generator is
@@ -68,8 +66,8 @@ begin
 	sine_gen : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_sine, qsine_sgn => vin);
 
 	fir_one : fir_basic generic map(
-		width_coeff => n_coeff,
+		width_coeff => width_coeff,
 		width => width
-	) port map(clk => clk, vin => vin_s, vout => vout, vout_s => vout_s);
+	) port map(clk => clk, vin => vin, vout => vout_s);
 
 end behavior;
