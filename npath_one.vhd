@@ -5,9 +5,9 @@ use work.npath_package.all;
 
 entity npath_one is
     generic (
-        width_phases : natural := 4;
-        width_coeff : natural := 4;
-        width : natural := 8
+        width : natural := 8;
+ 	width_coeff : natural := 4;
+        width_phases : natural := 4
     );
     port (
         clk : in std_logic;
@@ -35,18 +35,18 @@ architecture behavior of npath_one is
         generic (
             width : natural := 8;
             width_coeff : natural := 4;
-            width_ext : natural := 20
+  	    width_phases : natural := 4
         );
         port (
             clk : in std_logic;
             vin : in std_logic_vector(width - 1 downto 0);
-            vout : out std_logic_vector(width_ext - 1 downto 0) := (others => '0')
+	    vout : out std_logic_vector(q_out_s'length - 1 downto 0) := (others => '0')
         );
     end component;
 
 begin
     -- arrangment one
-    filtering : for i in 0 to width_phases - 1 generate
+    filtering : for i in 0 to q_sub'length - 1 generate
         process (phg(i))
         begin
             if phg(i)'EVENT and phg(i) = '1' then
@@ -58,7 +58,7 @@ begin
     tree : process (clk)
         variable q_mod : std_logic_vector(width - 1 downto 0) := (others => '0');
     begin
-        for i in 0 to width_phases/2 - 1 loop
+        for i in 0 to q_sub'length - 1 loop
             q_sub(i/2) <= std_logic_vector(signed(reg_out_array(i + width_phases/2)) - signed(reg_out_array(i)));
             q_sub_ext(i/2) <= q_sub(i/2)(q_sub(i/2)'length - 1) & q_sub(i/2)(q_sub(i/2)'length - 1 downto 0);
         end loop;
@@ -80,7 +80,7 @@ begin
     filtering_out : fir_basic generic map(
         width_coeff => width_coeff,
         width => width + log2(width_phases),
-        width_ext => width_ext
+        width_phases => width_phases
     ) port map(clk => clk, vin => q_sum(log2(width_coeff) - 2, 0), vout => q_out_s);
 
     vout_s <= q_out_s;

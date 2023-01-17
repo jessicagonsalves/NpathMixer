@@ -4,8 +4,7 @@ use ieee.std_logic_1164.all;
 package npath_package is
 
     constant clk_period_smp : time := 32ns;
-    constant size_coefficient : natural := 2;
-    constant n_coefficients : natural := 2 ** size_coefficient;
+    constant n_coefficients : natural := 4;
     constant n_phases : natural := 4;
     constant n_bits : natural := 8;
     constant n_integer : natural := 1;

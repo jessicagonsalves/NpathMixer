@@ -7,23 +7,25 @@ entity fir_basic is
 	generic (
 		width : natural := 8;
 		width_coeff : natural := 4;
-		width_ext : natural := 20
+		width_phases : natural := 4
 	);
 	port (
 		clk : in std_logic;
 		vin : in std_logic_vector(width - 1 downto 0);
-		vout : out std_logic_vector(width_ext - n_rom + n_integer - 1 downto 0) := (others => '0')
+		vout : out std_logic_vector(13 - 1 downto 0) := (others => '0')
 	);
 end fir_basic;
 
 architecture behavior of fir_basic is
 
+	constant width_ext : natural := (width + n_rom) + log2(width_coeff) + log2(width_phases);
 	type bits_array_t is array (natural range <>) of std_logic_vector(width - 1 downto 0);
 	signal q_s : bits_array_t(width_coeff - 1 downto 0) := (others => (others => '0'));
 	type fix_array_2w is array (natural range <>) of std_logic_vector(width + my_rom(0)'length - 1 downto 0);
 	signal vec_2w : fix_array_2w(width_coeff - 1 downto 0) := (others => (others => '0'));
 	type matrix_slv_t is array(natural range <>, natural range <>) of std_logic_vector(width_ext - 1 downto 0);
 	signal q_sum : matrix_slv_t(log2(width_coeff) - 1 downto 0, width_coeff/2 - 1 downto 0) := (others => (others => (others => '0')));
+
 
 begin
 
@@ -41,9 +43,8 @@ begin
 	end process shif_regs;
 
 	sum_tree : process (clk)
-		variable q_mod : std_logic_vector(width - 1 downto 0) := (others => '0');
-		variable q_rem : std_logic_vector(n_rom - n_integer - 1 downto 0) := (others => '0');
-		constant rem_int : integer := to_integer(unsigned(q_rem));
+		variable q_mod : std_logic_vector(width - 1 downto 0);
+		variable q_rem : std_logic_vector(n_rom - n_integer - 1 downto 0);
 		variable add_sgn : integer := 1;
 	begin
 		for i in 0 to width_coeff - 2 loop
@@ -64,7 +65,7 @@ begin
 
 		-- remainder
 		q_rem := q_sum(log2(width_coeff) - 1, 0)(n_rom - n_integer - 1 downto 0);
-		if 2 ** (q_rem'length - 1) < rem_int then
+		if 2 ** (q_rem'length - 1) < to_integer(unsigned(q_rem)) then
 			if q_rem(q_rem'length - 1) = '1' then
 				add_sgn := - 1;
 			end if;

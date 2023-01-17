@@ -35,12 +35,12 @@ architecture behavior of npath_two is
         generic (
             width : natural := 8;
             width_coeff : natural := 4;
-            width_ext : natural := 20
+  	    width_phases : natural := 4
         );
         port (
             clk : in std_logic;
             vin : in std_logic_vector(width - 1 downto 0);
-            vout : out std_logic_vector(width_ext - 1 downto 0) := (others => '0')
+	    vout : out std_logic_vector(q_out_s'length - 1 downto 0) := (others => '0')
         );
     end component;
 
@@ -56,7 +56,7 @@ begin
         fir_one : fir_basic generic map(
             width_coeff => width_coeff,
             width => width,
-            width_ext => width_ext
+            width_phases => width_phases
         ) port map(clk => phg(i), vin => reg_out_array(i), vout => fir_out(i));
     end generate;
 
