@@ -10,766 +10,811 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 Eam_test
-Z0 w1673385872
-Z1 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
-Z2 DPx4 ieee 17 fixed_generic_pkg 0 22 Rl?j<5:i_L<aE9]<7A]V?0
-Z3 DPx4 ieee 9 fixed_pkg 0 22 c`b>2Shb`ic5KAcV=K;Co1
-Z4 DPx4 work 13 npath_package 0 22 hCP@hnjcH^56Io3WnKXVe1
-Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 54
-Z8 dC:/Users/Jessiquinha/Documents/GitHub/NpathMixer
-Z9 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/am_test.vhd
-Z10 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/am_test.vhd
+Z0 w1674136426
+Z1 DPx4 work 13 npath_package 0 22 gm:?KVcT_Eei_[R:bd4aE1
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1957
+Z5 dC:/Users/jessi/Documents/GitHub/NpathMixer
+Z6 8C:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd
+Z7 FC:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd
 l0
 L6 1
 VAlNYcLS=9l5g6:4T>J<>G2
 !s100 ;]5NZ0Wh5Y>N]cjUKLjOQ0
-Z11 OV;C;2020.1;71
+Z8 OV;C;2020.1;71
 32
-Z12 !s110 1673518127
+Z9 !s110 1674215975
 !i10b 1
-Z13 !s108 1673518127.000000
-Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/am_test.vhd|
-Z15 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/am_test.vhd|
+Z10 !s108 1674215975.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd|
+Z12 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd|
 !i113 1
-Z16 o-work work -2002 -explicit
-Z17 tExplicit 1 CvgOpt 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
 Abehavior
 R1
 R2
 R3
 R4
-R5
-R6
-R7
 DEx4 work 7 am_test 0 22 AlNYcLS=9l5g6:4T>J<>G2
-!i122 54
+!i122 1957
 l41
 L17 31
 VFcWRS6:=Kom<>XUZG8hi]0
 !s100 nKKk00:^B^iWQmDmoizSC0
-R11
+R8
 32
-R12
+R9
 !i10b 1
+R10
+R11
+R12
+!i113 1
 R13
 R14
-R15
-!i113 1
-R16
-R17
 Eamplitude_modulation
-Z18 w1673729013
-Z19 DPx4 work 13 npath_package 0 22 MiTO9[ic<RT^IPKIQnjOA3
-Z20 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
-Z21 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z15 w1674215660
+R1
+Z16 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z17 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R2
+R3
+R4
+!i122 1958
 R5
-R6
-R7
-!i122 1437
-R8
-Z22 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/amplitude_modulation.vhd
-Z23 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/amplitude_modulation.vhd
+Z18 8C:/Users/jessi/Documents/GitHub/NpathMixer/amplitude_modulation.vhd
+Z19 FC:/Users/jessi/Documents/GitHub/NpathMixer/amplitude_modulation.vhd
 l0
-L10 1
+Z20 L10 1
 VG8@FA9c_9So4U0f7Ti`f>3
 !s100 ^HgVn8W2;=dJg[YHRSW402
-R11
+R8
 32
-Z24 !s110 1673729070
+Z21 !s110 1674215976
 !i10b 1
-Z25 !s108 1673729069.000000
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/amplitude_modulation.vhd|
-Z27 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/amplitude_modulation.vhd|
+R10
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/amplitude_modulation.vhd|
+Z23 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/amplitude_modulation.vhd|
 !i113 1
+R13
+R14
+Abehavior
+R1
 R16
 R17
-Abehavior
-R19
-R20
-R21
-R5
-R6
-R7
+R2
+R3
+R4
 DEx4 work 20 amplitude_modulation 0 22 G8@FA9c_9So4U0f7Ti`f>3
-!i122 1437
+!i122 1958
 l38
 L21 24
-V`FegkODVNm4l<C9iI2[^i1
-!s100 `^`g8nS4^9f9<J:U0b>6j0
-R11
+VLIHRKjN6Q;<@<I<?g`4R[3
+!s100 O7a@=V@T2PiP2h`CiX:V`2
+R8
 32
-R24
+R21
 !i10b 1
-R25
-R26
-R27
+R10
+R22
+R23
 !i113 1
-R16
-R17
+R13
+R14
 Eclock_generator
 R0
-R6
-R7
-!i122 1432
-R8
-Z28 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/clock_generator.vhd
-Z29 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/clock_generator.vhd
+R3
+R4
+!i122 1956
+R5
+Z24 8C:/Users/jessi/Documents/GitHub/NpathMixer/clock_generator.vhd
+Z25 FC:/Users/jessi/Documents/GitHub/NpathMixer/clock_generator.vhd
 l0
 L4 1
 VzRLT_JKl;1IL285l7oKUf0
 !s100 >1m]nm]fU9n6]_GeFTFB^2
-R11
+R8
 32
-Z30 !s110 1673729067
+R9
 !i10b 1
-Z31 !s108 1673729066.000000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/clock_generator.vhd|
-Z33 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/clock_generator.vhd|
+R10
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/clock_generator.vhd|
+Z27 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/clock_generator.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R6
-R7
+R3
+R4
 DEx4 work 15 clock_generator 0 22 zRLT_JKl;1IL285l7oKUf0
-!i122 1432
+!i122 1956
 l16
 L14 12
 VfQSn6d8Oc]zjZSb]XEGab1
 !s100 9LRD=<XRf9Bfz0e3>DBL<1
-R11
+R8
 32
-R30
+R9
+!i10b 1
+R10
+R26
+R27
+!i113 1
+R13
+R14
+Efir_basic
+Z28 w1674211513
+R1
+R2
+R3
+R4
+!i122 1959
+R5
+Z29 8C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd
+Z30 FC:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd
+l0
+L6 1
+VLoUOQ?39l]^]C7mA;1bo:0
+!s100 YOABRhRJb4jOd:GH]8Z9b0
+R8
+32
+R21
+!i10b 1
+Z31 !s108 1674215976.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd|
+Z33 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 9 fir_basic 0 22 LoUOQ?39l]^]C7mA;1bo:0
+!i122 1959
+l28
+L18 56
+Voo5IEgZSnNb4NAL^zzI:S1
+!s100 fo=Ez?@`nFNI6MNXKzW;82
+R8
+32
+R21
 !i10b 1
 R31
 R32
 R33
 !i113 1
-R16
-R17
-Efir_basic
-Z34 w1673696227
-R19
-R5
-R6
-R7
-!i122 1436
-R8
-Z35 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_basic.vhd
-Z36 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_basic.vhd
-l0
-L6 1
-V5TG3^iiEC;@2[LC3dB:dU1
-!s100 NZ8eK^>LziLJ5JRl5=RaF1
-R11
-32
-Z37 !s110 1673729069
-!i10b 1
-R25
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_basic.vhd|
-Z39 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_basic.vhd|
-!i113 1
-R16
-R17
-Abehavior
-R19
-R5
-R6
-R7
-DEx4 work 9 fir_basic 0 22 5TG3^iiEC;@2[LC3dB:dU1
-!i122 1436
-l28
-L19 59
-VXG[N174j[zXWfG`QZHLKQ1
-!s100 Oc@eX?zX0;F?nKIdFg:nP0
-R11
-32
-R37
-!i10b 1
-R25
-R38
-R39
-!i113 1
-R16
-R17
+R13
+R14
 Efir_small
 R0
-R19
 R1
+Z34 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
+Z35 DPx4 ieee 17 fixed_generic_pkg 0 22 Rl?j<5:i_L<aE9]<7A]V?0
+Z36 DPx4 ieee 9 fixed_pkg 0 22 c`b>2Shb`ic5KAcV=K;Co1
 R2
 R3
+R4
+!i122 1960
 R5
-R6
-R7
-!i122 1438
-R8
-Z40 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd
-Z41 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd
+8C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd
+FC:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd
 l0
 L7 1
 V>aaL0SdocIe=cXkie5HEn0
 !s100 2`4f6i]mVY2jj8<TnBI0k2
-R11
+R8
 32
-R24
+Z37 !s110 1674215977
 !i10b 1
-Z42 !s108 1673729070.000000
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd|
-Z44 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd|
+R31
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd|
+!s107 C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-Z45 DPx4 work 13 npath_package 0 22 :RiBS61?KdT7zQWoV<;441
-R1
+Z38 DPx4 work 13 npath_package 0 22 :RiBS61?KdT7zQWoV<;441
+R34
+R35
+R36
 R2
 R3
-R5
-R6
-R7
+R4
 DEx4 work 9 fir_small 0 22 >aaL0SdocIe=cXkie5HEn0
 !i122 1199
 l47
 L22 102
 VC:TlLh5abZG`3RDO_a14`3
 !s100 8gkEjCn7A2dGLcJ3W<>hO3
-R11
+R8
 32
 !s110 1673690238
 !i10b 1
 !s108 1673690237.000000
-R43
-R44
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd|
+!s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd|
 !i113 1
-R16
-R17
+R13
+R14
+Z39 dC:/Users/Jessiquinha/Documents/GitHub/NpathMixer
+FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd
+8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_small.vhd
 Efir_test
-Z46 w1673696326
-R19
-R6
-R7
-!i122 1439
-R8
-Z47 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test.vhd
-Z48 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test.vhd
+Z40 w1674211534
+R1
+R3
+R4
+!i122 1961
+R5
+Z41 8C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test.vhd
+Z42 FC:/Users/jessi/Documents/GitHub/NpathMixer/fir_test.vhd
 l0
 L6 1
-V9W[8C1zL4XmnA<X2cf4a33
-!s100 J]a?e1EUiSUNn<3`L;[jn1
-R11
+VHCfOL@_l^?d1QPc8hIPnL3
+!s100 N?l6PL4XT8S2B<JWiQ^`20
+R8
 32
-Z49 !s110 1673729071
+R37
 !i10b 1
-R42
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test.vhd|
-Z51 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test.vhd|
+Z43 !s108 1674215977.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test.vhd|
+Z45 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R19
-R6
-R7
-DEx4 work 8 fir_test 0 22 9W[8C1zL4XmnA<X2cf4a33
-!i122 1439
-l62
-L21 53
-VY@mBfg35G@PZRznPghji:2
-!s100 833;n5n@JFO0l=FJLL7^63
-R11
+R1
+R3
+R4
+DEx4 work 8 fir_test 0 22 HCfOL@_l^?d1QPc8hIPnL3
+!i122 1961
+l59
+L19 52
+VHCnT1MM7PcJb=gXWll55P0
+!s100 7a?b``g<g[4z[f?TC:]SL2
+R8
 32
-R49
+R37
 !i10b 1
-R42
-R50
-R51
+R43
+R44
+R45
 !i113 1
-R16
-R17
+R13
+R14
 Efir_test_two
 R0
-R19
-R6
-R7
-!i122 1440
-R8
-Z52 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd
-Z53 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd
+DPx4 work 13 npath_package 0 22 MiTO9[ic<RT^IPKIQnjOA3
+R3
+R4
+!i122 1449
+R5
+8C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd
+FC:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd
 l0
 L6 1
 Vl?kTH>o:b5>CZ=LVF6^X20
 !s100 Q;2XD=4@KHhNkNNjWGaE23
-R11
+R8
 32
-R49
+!s110 1674136499
 !i10b 1
-Z54 !s108 1673729071.000000
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd|
-Z56 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd|
+!s108 1674136499.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd|
+!s107 C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R1
-R5
+R34
 R2
+R35
+R36
+R38
 R3
-R45
-R6
-R7
+R4
 DEx4 work 12 fir_test_two 0 22 l?kTH>o:b5>CZ=LVF6^X20
 !i122 1201
 l52
 L21 44
 VPYn8[zde_TP6Z68E]H2472
 !s100 K_>hAOS99_^HZzLoone<B0
-R11
+R8
 32
 !s110 1673690239
 !i10b 1
 !s108 1673690238.000000
-R55
-R56
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd|
+!s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd|
 !i113 1
-R16
-R17
+R13
+R14
+R39
+FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd
+8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_test_two.vhd
 Emux
-R0
-R1
-R2
-R3
+Z46 w1673385872
+R34
+R35
+R36
+Z47 DPx4 work 13 npath_package 0 22 hCP@hnjcH^56Io3WnKXVe1
 R4
-R7
-R6
-R5
+R3
+R2
 !i122 51
-R8
-Z57 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd
-Z58 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd
+R39
+Z48 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd
+Z49 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd
 l0
 L6 1
 VzFSI^@4W346k30AGcdleV3
 !s100 V^P7cQMKDj25EYZ6m6oeX0
-R11
+R8
 32
-Z59 !s110 1673518124
+Z50 !s110 1673518124
 !i10b 1
-Z60 !s108 1673518124.000000
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd|
-Z62 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd|
+Z51 !s108 1673518124.000000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd|
+Z53 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/mux.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R1
-R2
-R3
+R34
+R35
+R36
+R47
 R4
-R7
-R6
-R5
+R3
+R2
 DEx4 work 3 mux 0 22 zFSI^@4W346k30AGcdleV3
 !i122 51
 l21
 L19 5
 Vm_7lKbG4ciJ75@a5BkeL11
 !s100 Hz0>m`baolE546OOkJdKi1
-R11
-32
-R59
-!i10b 1
-R60
-R61
-R62
-!i113 1
-R16
-R17
-Enpath_one
-Z63 w1673696070
-R19
-R5
-R6
-R7
-!i122 1435
 R8
-Z64 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one.vhd
-Z65 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one.vhd
-l0
-L6 1
-V_WC=84^QPL6RFRM3hdf5;3
-!s100 2WG1mC0;A8LNz?b8n3j2T3
-R11
 32
-R37
+R50
 !i10b 1
-Z66 !s108 1673729068.000000
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one.vhd|
-Z68 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one.vhd|
+R51
+R52
+R53
 !i113 1
-R16
-R17
-Abehavior
-R19
-R5
-R6
-R7
-DEx4 work 9 npath_one 0 22 _WC=84^QPL6RFRM3hdf5;3
-!i122 1435
-l47
-L21 70
-V`<`C3VlX`>>;99[<f@>zz2
-!s100 7VgHzX;@^^MKYjdL`?DCD3
-R11
-32
-R37
-!i10b 1
-R66
-R67
-R68
-!i113 1
-R16
-R17
-Enpath_one_am
-R0
+R13
+R14
+Enpath_one
+Z54 w1674214486
 R1
 R2
 R3
-Z69 DPx4 work 13 npath_package 0 22 HD?=XngnO0fX8ZR[I338]1
+R4
+!i122 1962
 R5
-R6
-R7
-!i122 554
+Z55 8C:/Users/jessi/Documents/GitHub/NpathMixer/npath_one.vhd
+Z56 FC:/Users/jessi/Documents/GitHub/NpathMixer/npath_one.vhd
+l0
+L6 1
+Ve9JmN<nOT^Hl[noj2BBXa2
+!s100 JU^4n50Kfh8C2X<R_nmdb2
 R8
-Z70 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd
-Z71 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd
+32
+Z57 !s110 1674215978
+!i10b 1
+Z58 !s108 1674215978.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/npath_one.vhd|
+Z60 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/npath_one.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 9 npath_one 0 22 e9JmN<nOT^Hl[noj2BBXa2
+!i122 1962
+l46
+L21 66
+V3@<7]IDMnHhUzm?U7M;jj1
+!s100 KSBDDP1T18Hz7C?^2mncd2
+R8
+32
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R13
+R14
+Enpath_one_am
+R46
+R34
+R35
+R36
+Z61 DPx4 work 13 npath_package 0 22 HD?=XngnO0fX8ZR[I338]1
+R2
+R3
+R4
+!i122 554
+R39
+Z62 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd
+Z63 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd
 l0
 L6 1
 VoPogDSJ?hNWbJSZbSRU]I1
 !s100 P8_GCmYC`X3Bfh;85ELg00
-R11
+R8
 32
-Z72 !s110 1673532706
+Z64 !s110 1673532706
 !i10b 1
-Z73 !s108 1673532706.000000
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd|
-Z75 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd|
+Z65 !s108 1673532706.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd|
+Z67 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_one_am.vhd|
 !i113 1
-R16
-R17
+R13
+R14
+Abehavior
+R34
+R35
+R36
+R61
+R2
+R3
+R4
+DEx4 work 12 npath_one_am 0 22 oPogDSJ?hNWbJSZbSRU]I1
+!i122 554
+l89
+Z68 L21 99
+VDd?]B1l]@Z8NoKL1`G>nF0
+!s100 g^H2FlAN?T17jg=k4B[2<0
+R8
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R13
+R14
+Pnpath_package
+R3
+R4
+!i122 1954
+R0
+R5
+Z69 8C:/Users/jessi/Documents/GitHub/NpathMixer/npath_package.vhd
+Z70 FC:/Users/jessi/Documents/GitHub/NpathMixer/npath_package.vhd
+l0
+L4 1
+Vgm:?KVcT_Eei_[R:bd4aE1
+!s100 0VkKO=a^D^<TE_iCX8WCf2
+R8
+32
+b1
+Z71 !s110 1674215974
+!i10b 1
+Z72 !s108 1674215974.000000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/npath_package.vhd|
+Z74 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/npath_package.vhd|
+!i113 1
+R13
+R14
+Bbody
+R1
+R3
+R4
+!i122 1954
+l0
+L25 1
+VhW>e[[266;gmLNK6^F0^l1
+!s100 ARaoLVSOdWdUV3OoVkzLM2
+R8
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 1
+R13
+R14
+Enpath_stimulus
+Z75 w1674215786
+R1
+R2
+R3
+R4
+!i122 1963
+R5
+Z76 8C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd
+Z77 FC:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd
+l0
+L6 1
+V;cZOad?]9L]7<07Mi;SVQ1
+!s100 mifb?hV`_@XUbAjf^Eh;i0
+R8
+32
+Z78 !s110 1674215979
+!i10b 1
+R58
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd|
+Z80 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd|
+!i113 1
+R13
+R14
 Abehavior
 R1
 R2
 R3
-R69
-R5
-R6
-R7
-DEx4 work 12 npath_one_am 0 22 oPogDSJ?hNWbJSZbSRU]I1
-!i122 554
-l89
-Z76 L21 99
-VDd?]B1l]@Z8NoKL1`G>nF0
-!s100 g^H2FlAN?T17jg=k4B[2<0
-R11
-32
-R72
-!i10b 1
-R73
-R74
-R75
-!i113 1
-R16
-R17
-Pnpath_package
-R6
-R7
-!i122 1431
-Z77 w1673697363
-R8
-Z78 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_package.vhd
-Z79 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_package.vhd
-l0
-L4 1
-VMiTO9[ic<RT^IPKIQnjOA3
-!s100 h?ZOkB7oacck6YZaQ:?=M3
-R11
-32
-b1
-Z80 !s110 1673729066
-!i10b 1
-R31
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_package.vhd|
-Z82 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_package.vhd|
-!i113 1
-R16
-R17
-Bbody
-R19
-R6
-R7
-!i122 1431
-l0
-L26 1
-V1m;FzLWjlc0A037:1UjFm1
-!s100 PidI`foJfQRNP3f]35jO72
-R11
-32
-R80
-!i10b 1
-R31
-R81
-R82
-!i113 1
-R16
-R17
-Enpath_stimulus
-Z83 w1673729065
-R19
-R5
-R6
-R7
-!i122 1442
-R8
-Z84 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_stimulus.vhd
-Z85 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_stimulus.vhd
-l0
-L6 1
-Vz;`83VTogeU^^el3Q27EC3
-!s100 @g`G>_OdY9hjCCHaBQN[Q2
-R11
-32
-Z86 !s110 1673729073
-!i10b 1
-Z87 !s108 1673729072.000000
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_stimulus.vhd|
-Z89 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_stimulus.vhd|
-!i113 1
-R16
-R17
-Abehavior
-R19
-R5
-R6
-R7
-Z90 DEx4 work 14 npath_stimulus 0 22 z;`83VTogeU^^el3Q27EC3
-!i122 1442
+R4
+DEx4 work 14 npath_stimulus 0 22 ;cZOad?]9L]7<07Mi;SVQ1
+!i122 1963
 l100
 L20 109
 VmB35TCJc95_>HN@3_Y7l61
 !s100 <m`K=;0>Gj9^MCd0^RaF[0
-R11
-32
-R86
-!i10b 1
-R87
-R88
-R89
-!i113 1
-R16
-R17
-Enpath_two
-Z91 w1673696254
-R19
-R5
-R6
-R7
-!i122 1441
 R8
-Z92 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two.vhd
-Z93 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two.vhd
+32
+R78
+!i10b 1
+R58
+R79
+R80
+!i113 1
+R13
+R14
+Enpath_test
+Z81 w1674214450
+R1
+R2
+R3
+R4
+!i122 1967
+R5
+Z82 8C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd
+Z83 FC:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd
+l0
+L6 1
+VBGTnR2@D`ijzGgE@89zQ73
+!s100 cEa5UkV8YK1@ChD0AGMGB0
+R8
+32
+Z84 !s110 1674215980
+!i10b 1
+Z85 !s108 1674215980.000000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd|
+Z87 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+R4
+Z88 DEx4 work 10 npath_test 0 22 BGTnR2@D`ijzGgE@89zQ73
+!i122 1967
+l80
+Z89 L21 106
+Z90 V^Do6N[O4H`4kE3WLWTSC22
+Z91 !s100 :DAVQ30dP=O?PGA]nC50Z3
+R8
+32
+R84
+!i10b 1
+R85
+R86
+R87
+!i113 1
+R13
+R14
+Enpath_two
+Z92 w1674215918
+R1
+R2
+R3
+R4
+!i122 1964
+R5
+Z93 8C:/Users/jessi/Documents/GitHub/NpathMixer/npath_two.vhd
+Z94 FC:/Users/jessi/Documents/GitHub/NpathMixer/npath_two.vhd
 l0
 L6 1
 VjW7n2zJlSP;?BkBMODcZ@2
 !s100 CYO8J;R50?2L6F]O6bZQ13
-R11
+R8
 32
-Z94 !s110 1673729072
+R78
 !i10b 1
-R54
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two.vhd|
-Z96 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two.vhd|
+Z95 !s108 1674215979.000000
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/npath_two.vhd|
+Z97 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/npath_two.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R19
-R5
-R6
-R7
-DEx4 work 9 npath_two 0 22 jW7n2zJlSP;?BkBMODcZ@2
-!i122 1441
-l47
-L21 67
-VYQYYQXJ51T]CMO`h6zA]`3
-!s100 7a4Z<TF5k`Y^Eb:NgoZb51
-R11
-32
-R94
-!i10b 1
-R54
-R95
-R96
-!i113 1
-R16
-R17
-Enpath_two_am
-R0
 R1
 R2
 R3
-R69
-R5
-R6
-R7
-!i122 561
+R4
+DEx4 work 9 npath_two 0 22 jW7n2zJlSP;?BkBMODcZ@2
+!i122 1964
+l46
+L21 65
+VA:064imPCkSffMbJ2<W2b2
+!s100 c6AcObGDllZ1jMCI41l_C3
 R8
-Z97 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd
-Z98 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd
+32
+R78
+!i10b 1
+R95
+R96
+R97
+!i113 1
+R13
+R14
+Enpath_two_am
+R46
+R34
+R35
+R36
+R61
+R2
+R3
+R4
+!i122 561
+R39
+Z98 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd
+Z99 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd
 l0
 L6 1
 VciFmk^[HED3fE[8M67aG=0
 !s100 Ji65H]b9:3D0SZUDRLbT:2
-R11
+R8
 32
-Z99 !s110 1673532710
+Z100 !s110 1673532710
 !i10b 1
-Z100 !s108 1673532710.000000
-Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd|
-Z102 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd|
+Z101 !s108 1673532710.000000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd|
+Z103 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/npath_two_am.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R1
+R34
+R35
+R36
+R61
 R2
 R3
-R69
-R5
-R6
-R7
+R4
 DEx4 work 12 npath_two_am 0 22 ciFmk^[HED3fE[8M67aG=0
 !i122 561
 l88
-R76
+R68
 VeZMF>mizT[Uk[AlhZ@31`0
 !s100 ?`=Q@1QIgid7OYoG4hW:33
-R11
+R8
 32
-R99
-!i10b 1
 R100
+!i10b 1
 R101
 R102
+R103
 !i113 1
-R16
-R17
+R13
+R14
 Ephase_generator
-Z103 w1673524071
-R19
-R6
-R7
-!i122 1434
-R8
-Z104 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/phase_generator.vhd
-Z105 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/phase_generator.vhd
+R0
+R1
+R3
+R4
+!i122 1955
+R5
+Z104 8C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd
+Z105 FC:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd
 l0
 L5 1
 VLbSd4bO:U:l6SgUm?UeQ;3
 !s100 NHjK5aBCXhOXl3HTZ3>3N2
-R11
+R8
 32
-Z106 !s110 1673729068
+R71
 !i10b 1
-R66
-Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/phase_generator.vhd|
-Z108 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/phase_generator.vhd|
+R72
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd|
+Z107 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R19
-R6
-R7
+R1
+R3
+R4
 DEx4 work 15 phase_generator 0 22 LbSd4bO:U:l6SgUm?UeQ;3
-!i122 1434
+!i122 1955
 l17
 L15 12
 V_CDchl[4i>QUPWJ5<Q[^41
 !s100 AT:3M6WCibFhGRaK[I4:j1
-R11
-32
-R106
-!i10b 1
-R66
-R107
-R108
-!i113 1
-R16
-R17
-Ereg
-R0
-R5
-R6
-R7
-!i122 24
 R8
-Z109 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd
-Z110 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd
+32
+R71
+!i10b 1
+R72
+R106
+R107
+!i113 1
+R13
+R14
+Ereg
+R46
+R2
+R3
+R4
+!i122 24
+R39
+Z108 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd
+Z109 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd
 l0
 L4 1
 V9;3ZI][^ekiKC;hN[;31:1
 !s100 ZRZIcz<RG`ig01neGUUe<3
-R11
+R8
 32
-Z111 !s110 1673517954
+Z110 !s110 1673517954
 !i10b 1
-Z112 !s108 1673517954.000000
-Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd|
-Z114 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd|
+Z111 !s108 1673517954.000000
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd|
+Z113 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/reg.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
-R5
-R6
-R7
+R2
+R3
+R4
 DEx4 work 3 reg 0 22 9;3ZI][^ekiKC;hN[;31:1
 !i122 24
 l20
 L16 17
 VcH4n4D_=J[DN_FML:aZOd2
 !s100 5V1I`b^m=N:fWP`4_e1K81
-R11
+R8
 32
-R111
+R110
 !i10b 1
+R111
 R112
 R113
-R114
 !i113 1
-R16
-R17
+R13
+R14
 Erom
-R0
-R4
-R1
+R46
+R47
+R34
+R35
+R36
 R2
 R3
-R5
-R6
-R7
+R4
 !i122 6
-R8
+R39
 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/rom.vhd
 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/rom.vhd
 l0
 L7 1
 V3kmB5A]55Hg3eLJQ:Q9>62
 !s100 gh3T6WDc9`?aRMlQ^]2T33
-R11
+R8
 32
 !s110 1673517870
 !i10b 1
@@ -777,105 +822,99 @@ R11
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/rom.vhd|
 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/rom.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Esine_generator
-Z115 w1673728992
-R19
-R20
-R21
+Z114 w1674215327
+R1
+R16
+R17
+R2
+R3
+R4
+!i122 1965
 R5
-R6
-R7
-!i122 1433
-R8
-Z116 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_generator.vhd
-Z117 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_generator.vhd
+Z115 8C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd
+Z116 FC:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd
 l0
-L9 1
-VR0>4OAG3VPzV>P:ge4?H_2
-!s100 m?O>bX1GB_4n2FQcjDEiP3
-R11
-32
-R106
-!i10b 1
-Z118 !s108 1673729067.000000
-Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_generator.vhd|
-Z120 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_generator.vhd|
-!i113 1
-R16
-R17
-Abehavior
-R19
 R20
-R21
-R5
-R6
-R7
-DEx4 work 14 sine_generator 0 22 R0>4OAG3VPzV>P:ge4?H_2
-!i122 1433
-l53
-L22 51
-VPSJ=XMVcz=@b7jA;4gm9m2
-!s100 ;i=R0hKg<];1`MkbmAo<R0
-R11
+VU8d<oc6CYY[UFUmYj]PQ82
+!s100 b2Wa1AebjK@gGVQN<figF2
+R8
 32
-R106
+R84
 !i10b 1
-R118
-R119
-R120
+R95
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd|
+Z118 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd|
 !i113 1
+R13
+R14
+Abehavior
+R1
 R16
 R17
+R2
+R3
+R4
+DEx4 work 14 sine_generator 0 22 U8d<oc6CYY[UFUmYj]PQ82
+!i122 1965
+l63
+L23 62
+VOiGAoZoO0Mf;eK04K23TN0
+!s100 84jchmc?Pk[KTfUEIoFHi2
+R8
+32
+R84
+!i10b 1
+R95
+R117
+R118
+!i113 1
+R13
+R14
 Esine_test
 R0
 R1
 R2
 R3
 R4
+!i122 1966
 R5
-R6
-R7
-!i122 55
-R8
-Z121 8C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_test.vhd
-Z122 FC:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_test.vhd
+Z119 8C:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd
+Z120 FC:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd
 l0
 L6 1
 VZl:M4>_WSl<49UGT]LUkg2
 !s100 FZ@_k<Uk<h58Bbnin<KXQ3
-R11
+R8
 32
-Z123 !s110 1673518128
+R84
 !i10b 1
-R13
-Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_test.vhd|
-Z125 !s107 C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/sine_test.vhd|
+R85
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd|
+Z122 !s107 C:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd|
 !i113 1
-R16
-R17
+R13
+R14
 Abehavior
 R1
 R2
 R3
 R4
-R5
-R6
-R7
 DEx4 work 9 sine_test 0 22 Zl:M4>_WSl<49UGT]LUkg2
-!i122 55
+!i122 1966
 l43
 L18 31
 VloKz3iSei36BRk5<82iKI3
 !s100 Q32g4C<biLKd0MX`=K?501
-R11
+R8
 32
-R123
+R84
 !i10b 1
-R13
-R124
-R125
+R85
+R121
+R122
 !i113 1
-R16
-R17
+R13
+R14

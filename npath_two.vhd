@@ -23,9 +23,9 @@ architecture behavior of npath_two is
     constant width_ext : natural := (width + n_rom) + log2(width_coeff) + log2(width_phases);
     type bits_array_t is array (natural range <>) of std_logic_vector(width - 1 downto 0);
     signal reg_out_array : bits_array_t(width_phases - 1 downto 0) := (others => (others => '0'));
-    type n_array_t is array (natural range <>) of std_logic_vector(vout_s'length - 1 downto 0);
+    type n_array_t is array (natural range <>) of std_logic_vector(width + log2(width_coeff) + n_integer - 1 downto 0);
     signal fir_out : n_array_t(width_phases - 1 downto 0) := (others => (others => '0'));
-    type sub_array_t is array (natural range <>) of std_logic_vector(vout_s'length - 1 downto 0);
+    type sub_array_t is array (natural range <>) of std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0);
     signal q_sub : sub_array_t(width_phases/2 - 1 downto 0) := (others => (others => '0'));
     type matrix_slv_t is array(natural range <>, natural range <>) of std_logic_vector(vout_s'length - 1 downto 0);
     signal q_sum : matrix_slv_t(log2(width_phases) - 2 downto 0, width_phases/4 - 1 downto 0) := (others => (others => (others => '0')));
@@ -34,13 +34,12 @@ architecture behavior of npath_two is
     component fir_basic is
         generic (
             width : natural := 8;
-            width_coeff : natural := 4;
-  	    width_phases : natural := 4
+            width_coeff : natural := 4
         );
         port (
             clk : in std_logic;
             vin : in std_logic_vector(width - 1 downto 0);
-	    vout : out std_logic_vector(q_out_s'length - 1 downto 0) := (others => '0')
+            vout : out std_logic_vector(width + log2(width_coeff) + n_integer - 1 downto 0) := (others => '0')
         );
     end component;
 
@@ -55,8 +54,7 @@ begin
         end process;
         fir_one : fir_basic generic map(
             width_coeff => width_coeff,
-            width => width,
-            width_phases => width_phases
+            width => width
         ) port map(clk => phg(i), vin => reg_out_array(i), vout => fir_out(i));
     end generate;
 
@@ -64,7 +62,7 @@ begin
         variable q_mod : std_logic_vector(width - 1 downto 0) := (others => '0');
     begin
         for i in 0 to width_phases/2 - 1 loop
-            q_sub(i/2) <= std_logic_vector(signed(fir_out(i + width_phases/2)) - signed(fir_out(i)));
+            q_sub(i/2) <= std_logic_vector(resize(signed(fir_out(i + width_phases/2)) - signed(fir_out(i)), q_sub(0)'length));
         end loop;
 
         for i in 0 to log2(width_coeff) - 2 loop
@@ -83,5 +81,5 @@ begin
 
     q_out_s <= q_sum(log2(width_coeff) - 2, 0);
     vout_s <= q_out_s;
-    vout <= q_out_s(q_out_s'length - 1) & q_out_s(width - 2 downto 0);
+    vout <= q_out_s(q_out_s'length - 1 downto q_out_s'length - width);
 end architecture behavior;

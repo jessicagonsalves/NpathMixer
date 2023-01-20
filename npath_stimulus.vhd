@@ -12,7 +12,7 @@ entity npath_stimulus is
         width : natural := n_bits
     );
     port (
-        vout_one_s, vout_one_s_am, vout_two_s, vout_two_s_am : out std_logic_vector((width + n_integer) + log2(width_coeff) + log2(width_phases) - 1 downto 0) := (others => '0');
+        vout_one_s, vout_one_s_am, vout_two_s, vout_two_s_am : out std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0) := (others => '0');
         vout_one, vout_two, vout_one_am, vout_two_am : out std_logic_vector(width - 1 downto 0)
     );
 end npath_stimulus;
@@ -81,6 +81,7 @@ architecture behavior of npath_stimulus is
         port (
             clk : in std_logic;
             sine : out real := 0.0;
+            qsine_uns : out std_logic_vector(width - 1 downto 0) := (others => '0');
             qsine_sgn : out std_logic_vector(width - 1 downto 0) := (others => '0')
         );
     end component;
@@ -106,10 +107,10 @@ begin
     am_gen : amplitude_modulation generic map(width => width/2, nsamples => width_samples) port map(clk_info => clk_info, clk_carrier => clk_carrier, vout => vin_am);
     -- sine with with period of 32*32ns
     clock_info : clock_generator generic map(clk_period => clk_period) port map(clk => clk_info);
-    sine_gen_info : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_info, qsine_sgn => vout_info);
+    sine_gen_info : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_info, qsine_uns => vout_info);
     -- sine carrier
     clk_gen_carrier : clock_generator generic map(clk_period => clk_period/(32)) port map(clk => clk_carrier);
-    sine_gen_carrier : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_carrier, qsine_sgn => vout_carrier);
+    sine_gen_carrier : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_carrier, qsine_uns => vout_carrier);
 
     npath_gen : npath_one generic map(
         width => width, width_phases => width_phases, width_coeff => width_coeff) port map(

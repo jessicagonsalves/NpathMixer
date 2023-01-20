@@ -12,15 +12,13 @@ entity fir_test is
 		clk_period : time := clk_period_smp
 	);
 	port (
-		vin_s : in std_logic_vector(width - 1 downto 0);
-		vout_s : out std_logic_vector(12 downto 0);
-		vout : out std_logic_vector(width - 1 downto 0)
+		vout_s : out std_logic_vector(width + log2(width_coeff) + n_integer - 1 downto 0)
 	);
 end fir_test;
 
 architecture behavior of fir_test is
 	constant width_rom : natural := 8;
-	constant width_ext : natural := (width + width_rom) + log2(width_coeff) + log2(width_phases);
+	constant width_ext : natural := (width + width_rom) + log2(width_coeff);
 	signal vin : std_logic_vector(width - 1 downto 0) := (others => '0');
 	signal clk, clk_sine : std_logic;
 
@@ -37,13 +35,12 @@ architecture behavior of fir_test is
 	component fir_basic is
 		generic (
 			width : natural := 8;
-			width_coeff : natural := 4;
-			width_ext : natural := 20
+			width_coeff : natural := 4
 		);
 		port (
 			clk : in std_logic;
 			vin : in std_logic_vector(width - 1 downto 0);
-			vout : out std_logic_vector(width_ext - n_rom + n_integer - 1 downto 0) := (others => '0')
+			vout : out std_logic_vector(width + log2(width_coeff) + n_integer - 1 downto 0) := (others => '0')
 		);
 	end component;
 
@@ -61,7 +58,7 @@ architecture behavior of fir_test is
 
 begin
 
-	clock_phase : clock_generator generic map(clk_period => clk_period) port map(clk => clk);
+	clock_phase : clock_generator generic map(clk_period => clk_period/32) port map(clk => clk);
 	clock_sine : clock_generator generic map(clk_period => clk_period/(4 * width)) port map(clk => clk_sine);
 	sine_gen : sine_generator generic map(width => width, nsamples => width_samples) port map(clk => clk_sine, qsine_sgn => vin);
 

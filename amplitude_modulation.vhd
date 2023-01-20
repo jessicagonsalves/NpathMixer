@@ -14,7 +14,7 @@ entity amplitude_modulation is
     );
     port (
         clk_info, clk_carrier : in std_logic;
-        vout : out std_logic_vector(2*width - 1 downto 0) := (others => '0')
+        vout : out std_logic_vector(2 * width - 1 downto 0) := (others => '0')
     );
 end amplitude_modulation;
 
@@ -30,6 +30,7 @@ architecture behavior of amplitude_modulation is
         port (
             clk : in std_logic;
             sine : out real := 0.0;
+            qsine_uns : out std_logic_vector(width - 1 downto 0) := (others => '0');
             qsine_sgn : out std_logic_vector(width - 1 downto 0) := (others => '0')
         );
     end component;
