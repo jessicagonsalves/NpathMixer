@@ -23,7 +23,7 @@ architecture behavior of npath_stimulus is
     signal phg : std_array(width_phases - 1 downto 0) := (others => '0');
     signal vin_sine, vin_am : std_logic_vector(width - 1 downto 0) := (others => '0');
     signal vout_info, vout_carrier : std_logic_vector(width/2 - 1 downto 0) := (others => '0');
-    constant clk_period_sys : time := 4ns;
+    constant clk_period_sys : time := 32ns;
     constant clk_period_phg : time := clk_period/width_phases;
     constant sine_period_info : time := clk_period * 32;
     constant sine_period_carrier : time := clk_period;

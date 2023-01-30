@@ -48,7 +48,7 @@ begin
     phase_gen : process (clk_phg)
         variable counter : natural;
     begin
-        if (clk_phg'event and clk_phg = '1') then
+        if (clk_phg'event and clk_phg = '0') then
             for i in 0 to width_phases - 1 loop
                 if i = counter then
                     phg(i) <= '1';
@@ -101,6 +101,7 @@ begin
             end loop;
         end loop;
     end process add_tree;
+
     q_out_s <= q_sum(log2(width_phases) - 2, 0);
     vout_s <= q_out_s;
     vout <= q_out_s(q_out_s'length - 1 downto q_out_s'length - width);

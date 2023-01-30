@@ -48,7 +48,7 @@ begin
     phase_gen : process (clk_phg)
         variable counter : natural;
     begin
-        if (clk_phg'event and clk_phg = '1') then
+        if (clk_phg'event and clk_phg = '0') then
             for i in 0 to width_phases - 1 loop
                 if i = counter then
                     phg(i) <= '1';
