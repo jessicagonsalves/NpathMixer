@@ -14,13 +14,13 @@ entity am_generator is
         width_samples : integer := 5 -- LOG2 OF THE VALUE
     );
     port (
-        vout : out std_logic_vector(2 * width - 1 downto 0) := (others => '0')
+        vout : out std_logic_vector(width - 1 downto 0) := (others => '0')
     );
 end am_generator;
 
 architecture behavior of am_generator is
 
-    signal vin_info, vin_carrier : std_logic_vector(width - 1 downto 0) := (others => '0');
+    signal vin_info, vin_carrier : std_logic_vector(width/2 - 1 downto 0) := (others => '0');
 
     component sine_generator is
         generic (
@@ -36,8 +36,8 @@ architecture behavior of am_generator is
 
 begin
 
-    sine_gen : sine_generator generic map(sine_period => sine_period_info, width => width, width_samples => width_samples) port map(qsine_sgn => vin_info);
-    sine_gen_carrier : sine_generator generic map(sine_period => sine_period_carrier, width => width, width_samples => width_samples) port map(qsine_sgn => vin_carrier);
+    sine_gen : sine_generator generic map(sine_period => sine_period_info, width => width/2, width_samples => width_samples) port map(qsine_sgn => vin_info);
+    sine_gen_carrier : sine_generator generic map(sine_period => sine_period_carrier, width => width/2, width_samples => width_samples) port map(qsine_sgn => vin_carrier);
     vout <= std_logic_vector(signed(vin_info) * signed(vin_carrier));
 
 end behavior;

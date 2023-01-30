@@ -5,7 +5,7 @@ use work.npath_package.all;
 
 entity npath_stimulus is
     generic (
-        clk_period : time := 2*clk_period_smp;
+        clk_period : time := clk_period_smp;
         width_phases : natural := n_phases;
         width_coeff : natural := n_coefficients;
         width_samples : natural := n_samples;
@@ -56,7 +56,7 @@ architecture behavior of npath_stimulus is
             width_samples : integer := 5 -- LOG2 OF THE VALUE
         );
         port (
-            vout : out std_logic_vector(2 * width - 1 downto 0) := (others => '0')
+            vout : out std_logic_vector(width - 1 downto 0) := (others => '0')
         );
     end component;
 
@@ -105,7 +105,7 @@ begin
     -- sine with period of 32ns
     sine_gen : sine_generator generic map(sine_period => clk_period, width => width, width_samples => width_samples) port map(qsine_sgn => vin_sine);
     -- amplitude modulation wave
-    am_gen : am_generator generic map(sine_period_info => sine_period_info, sine_period_carrier => sine_period_carrier, width => width/2, width_samples => width_samples) port map(vout => vin_am);
+    am_gen : am_generator generic map(sine_period_info => sine_period_info, sine_period_carrier => sine_period_carrier, width => width, width_samples => width_samples) port map(vout => vin_am);
     -- sine info
     sine_gen_info : sine_generator generic map(sine_period => sine_period_info, width => width/2, width_samples => width_samples) port map(qsine_sgn => vout_info);
     -- sine carrier

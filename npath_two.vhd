@@ -77,27 +77,30 @@ begin
         ) port map(clk => phg(i), vin => reg_out_array(i), vout => fir_out(i));
     end generate;
 
-    tree : process (clk)
-        variable q_mod : std_logic_vector(width - 1 downto 0) := (others => '0');
+    sub_tree : process (clk)
     begin
         for i in 0 to width_phases/2 - 1 loop
             q_sub(i/2) <= std_logic_vector(resize(signed(fir_out(i + width_phases/2)) - signed(fir_out(i)), q_sub(0)'length));
         end loop;
+    end process sub_tree;
 
-        for i in 0 to log2(width_phases) - 2 loop
-            for j in 0 to width_phases/4 - 2 loop
-                q_mod := std_logic_vector(to_unsigned(j, width));
+    add_tree : process (clk)
+        variable q_mod : std_logic_vector(width_phases - 1 downto 0) := (others => '0');
+    begin
+
+        for j in 0 to width_phases/4 - 1 loop
+            q_sum(0, j) <= std_logic_vector(resize(signed(q_sub(2 * j)) + signed(q_sub(2 * j + 1)), q_sum(0, 0)'length));
+        end loop;
+
+        for i in 1 to log2(width_phases) - 2 loop
+            for j in 0 to width_phases/4 - 1 loop
+                q_mod := std_logic_vector(to_unsigned(j, width_phases));
                 if q_mod(0) = '0' then
-                    if i = 0 then
-                        q_sum(i, j/2) <= std_logic_vector(signed(q_sub(j)) + signed(q_sub(j + 1)));
-                    else
-                        q_sum(i, j/2) <= std_logic_vector(signed(q_sum(i - 1, j)) + signed(q_sum(i - 1, j + 1)));
-                    end if;
+                    q_sum(i, j/2) <= std_logic_vector(resize(signed(q_sum(i - 1, j)) + signed(q_sum(i - 1, j + 1)), q_sum(0, 0)'length));
                 end if;
             end loop;
         end loop;
-    end process tree;
-
+    end process add_tree;
     q_out_s <= q_sum(log2(width_phases) - 2, 0);
     vout_s <= q_out_s;
     vout <= q_out_s(q_out_s'length - 1 downto q_out_s'length - width);

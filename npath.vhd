@@ -45,7 +45,7 @@ architecture behavior of npath is
 
 begin
 
-    phase_gen: process (clk_phg)
+    phase_gen : process (clk_phg)
         variable counter : natural;
     begin
         if (clk_phg'event and clk_phg = '1') then
@@ -73,27 +73,31 @@ begin
         end process;
     end generate;
 
-    tree : process (clk)
-        variable q_mod : std_logic_vector(width_coeff - 1 downto 0) := (others => '0');
+    sub_tree : process (clk)
     begin
-        for i in 0 to q_sub'length - 1 loop
-            q_sub(i/2) <= std_logic_vector(signed(reg_out_array(i + width_phases/2)) - signed(reg_out_array(i)));
-            q_sub_ext(i/2) <= q_sub(i/2)(q_sub(i/2)'left) & q_sub(i/2)(q_sub(i/2)'length - 1 downto 0);
+        for i in 0 to width_phases/2 - 1 loop
+            q_sub(i) <= std_logic_vector(signed(reg_out_array(i + width_phases/2)) - signed(reg_out_array(i)));
+            q_sub_ext(i) <= q_sub(i)(q_sub(i)'left) & q_sub(i)(q_sub(i)'length - 1 downto 0);
+        end loop;
+    end process sub_tree;
+
+    add_tree : process (clk)
+        variable q_mod : std_logic_vector(width_phases - 1 downto 0) := (others => '0');
+    begin
+
+        for j in 0 to width_phases/4 - 1 loop
+            q_sum(0, j) <= std_logic_vector(resize(signed(q_sub_ext(2 * j)) + signed(q_sub_ext(2 * j + 1)), q_sum(0, 0)'length));
         end loop;
 
-        for i in 0 to log2(width_phases) - 2 loop
-            for j in 0 to width_phases/4 - 2 loop
-                q_mod := std_logic_vector(to_unsigned(j, width_coeff));
+        for i in 1 to log2(width_phases) - 2 loop
+            for j in 0 to width_phases/4 - 1 loop
+                q_mod := std_logic_vector(to_unsigned(j, width_phases));
                 if q_mod(0) = '0' then
-                    if i = 0 then
-                        q_sum(i, j/2) <= std_logic_vector(resize(signed(q_sub_ext(j)) + signed(q_sub_ext(j + 1)), q_sum(0, 0)'length));
-                    else
-                        q_sum(i, j/2) <= std_logic_vector(resize(signed(q_sum(i - 1, j)) + signed(q_sum(i - 1, j + 1)), q_sum(0, 0)'length));
-                    end if;
+                    q_sum(i, j/2) <= std_logic_vector(resize(signed(q_sum(i - 1, j)) + signed(q_sum(i - 1, j + 1)), q_sum(0, 0)'length));
                 end if;
             end loop;
         end loop;
-    end process tree;
+    end process add_tree;
 
     filtering_out : fir_basic generic map(
         width_coeff => width_coeff,
