@@ -43,7 +43,6 @@ begin
 	sum_tree : process (clk)
 		variable q_mod : std_logic_vector(width - 1 downto 0);
 		variable q_rem : std_logic_vector(n_rom - n_integer - 1 downto 0);
-		variable add_sgn : integer := 1;
 	begin
 		for i in 0 to width_coeff - 2 loop
 			q_mod := std_logic_vector(to_unsigned(i, width));
@@ -64,7 +63,7 @@ begin
 		--remainder
 		q_rem := q_sum(log2(width_coeff) - 1, 0)(n_rom - n_integer - 1 downto 0);
 		if 2 ** (q_rem'length - 1) < to_integer(unsigned(q_rem)) then
-			vout <= std_logic_vector(to_signed(to_integer(signed(q_sum(log2(width_coeff) - 1, 0)(q_sum(log2(width_coeff) - 1, 0)'length - 1 downto n_rom - n_integer))) + add_sgn, vout'length));
+			vout <= std_logic_vector(to_signed(to_integer(signed(q_sum(log2(width_coeff) - 1, 0)(q_sum(log2(width_coeff) - 1, 0)'length - 1 downto n_rom - n_integer))) + 1, vout'length));
 		else
 			vout <= q_sum(log2(width_coeff) - 1, 0)(q_sum(log2(width_coeff) - 1, 0)'length - 1 downto n_rom - n_integer);
 		end if;

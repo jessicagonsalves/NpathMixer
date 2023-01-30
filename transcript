@@ -2,7 +2,7 @@
 # Compile of clock_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of phase_generator.vhd was successful with warnings.
-# Compile of npath_one.vhd was successful.
+# Compile of npath.vhd was successful.
 # Compile of fir_basic.vhd was successful.
 # Compile of amplitude_modulation.vhd was successful.
 # Compile of fir_small.vhd failed with 5 errors.
@@ -26,7 +26,7 @@ vsim -gui work.npath_stimulus
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.amplitude_modulation(behavior)
-# Loading work.npath_one(behavior)
+# Loading work.npath(behavior)
 # Loading work.fir_basic(behavior)
 # Loading work.npath_two(behavior)
 add wave -position insertpoint sim:/npath_stimulus/*

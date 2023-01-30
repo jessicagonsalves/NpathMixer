@@ -1,12 +1,26 @@
-C:/Users/jessi/Documents/GitHub/NpathMixer/npath_one.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/npath_one.vhd
+C:/Users/jessi/Documents/GitHub/NpathMixer/npath_two.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/npath_two.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package npath_package
--- Compiling entity npath_one
--- Compiling architecture behavior of npath_one
+-- Compiling entity npath_two
+-- Compiling architecture behavior of npath_two
+
+} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/am_generator.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/am_generator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package std_logic_textio
+-- Loading package npath_package
+-- Compiling entity am_generator
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/am_generator.vhd(12): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling architecture behavior of am_generator
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/am_generator.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -18,19 +32,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_textio
 -- Loading package npath_package
 -- Compiling entity sine_generator
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd(12): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 -- Compiling architecture behavior of sine_generator
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd(54): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-
-} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package npath_package
--- Compiling entity sine_test
--- Compiling architecture behavior of sine_test
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/sine_test.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/sine_generator.vhd(64): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 
 } {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/npath_package.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/npath_package.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -42,27 +47,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling package body npath_package
 -- Loading package npath_package
 
-} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd
+} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package npath_package
 -- Compiling entity phase_generator
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/phase_generator.vhd(8): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 -- Compiling architecture behavior of phase_generator
-
-} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package npath_package
--- Compiling entity npath_stimulus
--- Compiling architecture behavior of npath_stimulus
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd(29): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/npath_stimulus.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -83,33 +75,30 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package npath_package
 -- Compiling entity npath_test
 -- Compiling architecture behavior of npath_test
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/npath_test.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
-} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd
+} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/npath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/npath.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package npath_package
--- Compiling entity am_test
--- Compiling architecture behavior of am_test
-** Warning: C:/Users/jessi/Documents/GitHub/NpathMixer/am_test.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling entity npath
+-- Compiling architecture behavior of npath
 
-} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/amplitude_modulation.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/amplitude_modulation.vhd
+} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading package std_logic_textio
 -- Loading package npath_package
--- Compiling entity amplitude_modulation
--- Compiling architecture behavior of amplitude_modulation
+-- Compiling entity fir_test_two
+** Error: C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd(10): (vcom-1136) Unknown identifier "size_coefficient".
+** Note: C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd(19): VHDL Compiler exiting
 
-} {} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd
+} {8.0 9.0} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -130,17 +119,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Error: C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd(102): Cannot resolve indexed name (type ieee.std_logic_1164.STD_LOGIC_VECTOR) as type ieee.fixed_pkg.sfixed.
 ** Note: C:/Users/jessi/Documents/GitHub/NpathMixer/fir_small.vhd(123): VHDL Compiler exiting
 
-} {15.0 20.0} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package npath_package
--- Compiling entity fir_test_two
-** Error: C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd(10): (vcom-1136) Unknown identifier "size_coefficient".
-** Note: C:/Users/jessi/Documents/GitHub/NpathMixer/fir_test_two.vhd(19): VHDL Compiler exiting
-
-} {8.0 9.0} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd
+} {15.0 20.0} {}} C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/jessi/Documents/GitHub/NpathMixer/fir_basic.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO

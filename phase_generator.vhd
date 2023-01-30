@@ -4,23 +4,32 @@ use work.npath_package.all;
 
 entity phase_generator is
     generic (
-        width_phases : natural := 4;
-        clk_period : time := 10ns
+        width_phases : natural := 4
     );
     port (
-        clk : out std_array(width_phases - 1 downto 0) := (others => '0')
+        clk : in std_logic;
+        phg : out std_array(width_phases - 1 downto 0) := (others => '0')
     );
 end phase_generator;
 
 architecture behavior of phase_generator is
 
 begin
-    phase_generation : process
+    process (clk)
+        variable counter : natural;
     begin
-        for i in 0 to width_phases - 1 loop
-            clk(i) <= '1';
-            wait for clk_period / width_phases;
-            clk(i) <= '0';
-        end loop;
-    end process phase_generation;
+        if (clk'event and clk = '1') then
+            for i in 0 to width_phases - 1 loop
+                if i = counter then
+                    phg(i) <= '1';
+                else
+                    phg(i) <= '0';
+                end if;
+            end loop;
+            counter := counter + 1;
+            if (counter = width_phases) then
+                counter := 0;
+            end if;
+        end if;
+    end process;
 end architecture behavior;

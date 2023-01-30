@@ -5,8 +5,8 @@ use work.npath_package.all;
 
 entity npath_stimulus is
     generic (
-        clk_period : time := 2*clk_period_smp;
-        width_phases : natural := n_phases;
+        clk_period : time := clk_period_smp;
+        width_phases : natural := 2*n_phases;
         width_coeff : natural := n_coefficients;
         width_samples : natural := n_samples;
         width : natural := n_bits
@@ -23,7 +23,10 @@ architecture behavior of npath_stimulus is
     signal phg : std_array(width_phases - 1 downto 0) := (others => '0');
     signal vin_sine, vin_am : std_logic_vector(width - 1 downto 0) := (others => '0');
     signal vout_info, vout_carrier : std_logic_vector(width/2 - 1 downto 0) := (others => '0');
-    constant clk_period_sys : time := 4ns;
+    constant clk_period_sys : time := clk_periodvsim -gui work.npath_stimulus
+add wave -position insertpoint sim:/npath_stimulus/*
+run
+ ;
     constant clk_period_phg : time := clk_period/width_phases;
     constant sine_period_info : time := clk_period * 32;
     constant sine_period_carrier : time := clk_period;

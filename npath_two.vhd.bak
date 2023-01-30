@@ -85,7 +85,7 @@ begin
         end loop;
 
         for i in 0 to log2(width_phases) - 2 loop
-            for j in 0 to width_phases/4 - 2 loop
+            for j in 0 to width_phases/2 - 2 loop
                 q_mod := std_logic_vector(to_unsigned(j, width));
                 if q_mod(0) = '0' then
                     if i = 0 then
@@ -98,7 +98,7 @@ begin
         end loop;
     end process tree;
 
-    q_out_s <= q_sum(log2(width_phases) - 2, 0);
+    q_out_s <= q_sum(log2(width_coeff) - 2, 0);
     vout_s <= q_out_s;
     vout <= q_out_s(q_out_s'length - 1 downto q_out_s'length - width);
 end architecture behavior;

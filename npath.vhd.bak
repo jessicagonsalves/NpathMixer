@@ -3,24 +3,24 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.npath_package.all;
 
-entity npath_one is
+entity npath is
     generic (
         width : natural := 8;
         width_coeff : natural := 4;
         width_phases : natural := 4
     );
     port (
-        clk : in std_logic;
-        phg : in std_array(width_phases - 1 downto 0) := (others => '0');
+        clk, clk_phg : in std_logic;
         vin : in std_logic_vector(width - 1 downto 0);
         vout_s : out std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0) := (others => '0');
         vout : out std_logic_vector(width - 1 downto 0)
     );
-end npath_one;
+end npath;
 
-architecture behavior of npath_one is
+architecture behavior of npath is
 
     constant width_ext : natural := (width + n_rom) + log2(width_coeff) + log2(width_phases);
+    signal phg : std_array(width_phases - 1 downto 0) := (others => '0');
     type bitsPlus_array_t is array (natural range <>) of std_logic_vector(width downto 0);
     signal reg_out_array : bitsPlus_array_t(width_phases - 1 downto 0) := (others => (others => '0'));
     type sub_array_t is array (natural range <>) of std_logic_vector(width downto 0);
@@ -44,6 +44,25 @@ architecture behavior of npath_one is
     end component;
 
 begin
+
+    phase_gen: process (clk_phg)
+        variable counter : natural;
+    begin
+        if (clk_phg'event and clk_phg = '1') then
+            for i in 0 to width_phases - 1 loop
+                if i = counter then
+                    phg(i) <= '1';
+                else
+                    phg(i) <= '0';
+                end if;
+            end loop;
+            counter := counter + 1;
+            if (counter = width_phases) then
+                counter := 0;
+            end if;
+        end if;
+    end process phase_gen;
+
     -- arrangment one
     filtering : for i in 0 to width_phases - 1 generate
         process (phg(i))
