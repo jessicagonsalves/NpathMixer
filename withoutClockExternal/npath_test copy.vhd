@@ -51,6 +51,7 @@ architecture behavior of npath_test is
             clk : out std_logic
         );
     end component;
+
     component sine_generator is
         generic (
             sine_period : time := 32ns;
@@ -78,29 +79,13 @@ begin
     clock : clock_generator generic map(clk_period => clk_period_smp) port map(clk => clk);
     clock_sine : clock_generator generic map(clk_period => clk_period_smp/(4 * width)) port map(clk => clk_sine);
     clock_phg : clock_generator generic map(clk_period => clk_period_smp/width_phases) port map(clk => clk_phg);
+    phase_gen: 
     -- sine_gen : sine_generator generic map(sine_period => clk_period_smp, width => width) port map(qsine_sgn => vin);
     -- amplitude modulation wave
     clock_info : clock_generator generic map(clk_period => clk_period_smp) port map(clk => clk_info);
     clk_gen_carrier : clock_generator generic map(clk_period => clk_period_smp/(32)) port map(clk => clk_carrier);
     am_gen : am_generator generic map(sine_period_info => clk_period_smp * 32, sine_period_carrier => clk_period_smp, width => width) port map(vout => vin);
 
-    phase_gen : process (clk_phg, clk)
-        variable counter : natural;
-    begin
-        if (clk_phg'event and clk_phg = '0') then
-            for i in 0 to width_phases - 1 loop
-                if i = counter then
-                    phg(i) <= '1';
-                else
-                    phg(i) <= '0';
-                end if;
-            end loop;
-            counter := counter + 1;
-            if (counter = width_phases) then
-                counter := 0;
-            end if;
-        end if;
-    end process phase_gen;
 
     -- arrangment one
     filtering : for i in 0 to width_phases - 1 generate

@@ -7,7 +7,7 @@
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -22,7 +22,7 @@
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -35,7 +35,7 @@
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -52,7 +52,7 @@
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -115,7 +115,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -129,7 +129,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -143,7 +143,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -157,7 +157,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -171,7 +171,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -183,7 +183,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -195,7 +195,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -207,7 +207,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -219,7 +219,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 6 errors.
@@ -231,7 +231,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 5 errors.
@@ -243,7 +243,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -255,7 +255,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -267,7 +267,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -279,7 +279,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -291,7 +291,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -303,7 +303,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -315,7 +315,7 @@ run
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
 # Compile of npath_package.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -390,7 +390,7 @@ vsim -gui work.npath
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -420,7 +420,7 @@ vsim -gui work.npath
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -437,7 +437,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -462,7 +462,7 @@ vsim -gui work.npath
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -502,7 +502,7 @@ vsim -gui work.sine_test
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -537,7 +537,7 @@ vsim -gui work.sine_test
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -604,7 +604,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -629,7 +629,7 @@ vsim -gui work.npath
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -659,7 +659,7 @@ vsim -gui work.npath
 # Loading work.clock_generator(behavior)
 # Loading work.phase_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 run
@@ -674,7 +674,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -686,7 +686,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -713,7 +713,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 run
@@ -738,7 +738,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -765,7 +765,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -788,7 +788,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -815,7 +815,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -832,7 +832,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -859,7 +859,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -876,7 +876,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 5 errors.
@@ -888,7 +888,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -900,7 +900,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -912,7 +912,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -924,7 +924,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -936,7 +936,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 2 errors.
@@ -948,7 +948,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -960,7 +960,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 5 errors.
@@ -972,7 +972,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 4 errors.
@@ -984,7 +984,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 3 errors.
@@ -996,7 +996,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd failed with 1 errors.
@@ -1008,7 +1008,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1033,7 +1033,7 @@ vsim -gui work.fir_test
 # Loading work.npath_package(body)
 # Loading work.fir_test(behavior)
 # Loading work.clock_generator(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/fir_test/*
 force -freeze sim:/fir_test/vin 00010001 0
 run
@@ -1050,7 +1050,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1073,7 +1073,7 @@ vsim -gui work.fir_test
 # Loading work.npath_package(body)
 # Loading work.fir_test(behavior)
 # Loading work.clock_generator(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/fir_test/*
 force -freeze sim:/fir_test/vin 00010001 0
 run
@@ -1090,7 +1090,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd failed with 1 errors.
+# Compile of fir.vhd failed with 1 errors.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1102,7 +1102,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1125,7 +1125,7 @@ vsim -gui work.fir_test
 # Loading work.npath_package(body)
 # Loading work.fir_test(behavior)
 # Loading work.clock_generator(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/fir_test/*
 force -freeze sim:/fir_test/vin 00010001 0
 run
@@ -1149,7 +1149,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1172,7 +1172,7 @@ vsim -gui work.fir_test
 # Loading work.npath_package(body)
 # Loading work.fir_test(behavior)
 # Loading work.clock_generator(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/fir_test/*
 force -freeze sim:/fir_test/vin 00010001 0
 run
@@ -1194,7 +1194,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1221,7 +1221,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -1238,7 +1238,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1250,7 +1250,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1277,7 +1277,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 run
@@ -1300,7 +1300,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1327,7 +1327,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 force -freeze sim:/npath/vin 00011111 0
 # ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/npath/vin' not found.
@@ -1369,7 +1369,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1377,7 +1377,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1404,7 +1404,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1412,7 +1412,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1439,7 +1439,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1447,7 +1447,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1474,7 +1474,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1482,7 +1482,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1509,7 +1509,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 run
@@ -1519,7 +1519,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1546,22 +1546,22 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 9 (14 downto 6).
-#    Time: 5 ns  Iteration: 1  Process: /npath/filtering(0)/fir_one/shif_regs File: C:/intelFPGA/20.1/fir_basic.vhd
-# Fatal error in Process shif_regs at C:/intelFPGA/20.1/fir_basic.vhd line 39
+#    Time: 5 ns  Iteration: 1  Process: /npath/filtering(0)/fir_one/shif_regs File: C:/intelFPGA/20.1/fir.vhd
+# Fatal error in Process shif_regs at C:/intelFPGA/20.1/fir.vhd line 39
 # 
 # HDL call sequence:
-# Stopped at C:/intelFPGA/20.1/fir_basic.vhd 39 Process shif_regs
+# Stopped at C:/intelFPGA/20.1/fir.vhd 39 Process shif_regs
 # 
 # Compile of npath_package.vhd was successful with warnings.
 # Compile of clock_generator.vhd was successful with warnings.
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1588,7 +1588,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1596,7 +1596,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1608,7 +1608,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1649,7 +1649,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1674,7 +1674,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1682,7 +1682,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1709,30 +1709,30 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 
 
 
 run
 # ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 9 (8 downto 0).
-#    Time: 5 ns  Iteration: 1  Process: /npath/filtering(0)/fir_one/shif_regs File: C:/intelFPGA/20.1/fir_basic.vhd
-# Fatal error in Process shif_regs at C:/intelFPGA/20.1/fir_basic.vhd line 41
+#    Time: 5 ns  Iteration: 1  Process: /npath/filtering(0)/fir_one/shif_regs File: C:/intelFPGA/20.1/fir.vhd
+# Fatal error in Process shif_regs at C:/intelFPGA/20.1/fir.vhd line 41
 # 
 # HDL call sequence:
-# Stopped at C:/intelFPGA/20.1/fir_basic.vhd 41 Process shif_regs
+# Stopped at C:/intelFPGA/20.1/fir.vhd 41 Process shif_regs
 # 
 run
 # Cannot continue because of fatal error.
 # HDL call sequence:
-# Stopped at C:/intelFPGA/20.1/fir_basic.vhd 41 Process shif_regs
+# Stopped at C:/intelFPGA/20.1/fir.vhd 41 Process shif_regs
 # 
 # Compile of npath_package.vhd was successful with warnings.
 # Compile of clock_generator.vhd was successful with warnings.
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1759,7 +1759,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1767,7 +1767,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1794,7 +1794,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1802,7 +1802,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1829,7 +1829,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1837,7 +1837,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1864,7 +1864,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 # Compile of npath_package.vhd was successful with warnings.
@@ -1872,7 +1872,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1899,7 +1899,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 run
@@ -1924,7 +1924,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1951,7 +1951,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 # WARNING: No extended dataflow license exists
 add wave -position insertpoint sim:/npath/*
 run
@@ -1972,7 +1972,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -1999,7 +1999,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 run
@@ -2014,7 +2014,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd was successful with warnings.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.
@@ -2041,7 +2041,7 @@ vsim -gui work.npath
 # Loading ieee.std_logic_textio(body)
 # Loading work.sine_generator(behavior)
 # Loading work.reg(behavior)
-# Loading work.fir_basic(behavior)
+# Loading work.fir(behavior)
 add wave -position insertpoint sim:/npath/*
 run
 run
@@ -2057,7 +2057,7 @@ run
 # Compile of phase_generator.vhd was successful with warnings.
 # Compile of sine_generator.vhd was successful.
 # Compile of sine_test.vhd was successful with warnings.
-# Compile of fir_basic.vhd was successful.
+# Compile of fir.vhd was successful.
 # Compile of fir_test.vhd failed with 3 errors.
 # Compile of reg.vhd was successful.
 # Compile of fir_small.vhd was successful.

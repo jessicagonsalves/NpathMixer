@@ -1,0 +1,127 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.npath_package.all;
+
+entity npath_stimulus is
+    generic (
+        clk_period : time := clk_period_smp;
+        width_phases : natural := n_phases;
+        width_coeff : natural := n_coefficients;
+        width_samples : natural := n_samples;
+        width : natural := n_bits
+    );
+    port (
+        vout_one_s, vout_one_s_am, vout_two_s, vout_two_s_am : out std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0) := (others => '0');
+        vout_one, vout_two, vout_one_am, vout_two_am : out std_logic_vector(width - 1 downto 0)
+    );
+end npath_stimulus;
+
+architecture behavior of npath_stimulus is
+
+    signal clk, clk_phg : std_logic := '0';
+    signal phg : std_array(width_phases - 1 downto 0) := (others => '0');
+    signal vin_sine, vin_am : std_logic_vector(width - 1 downto 0) := (others => '0');
+    signal vout_info, vout_carrier : std_logic_vector(width/2 - 1 downto 0) := (others => '0');
+    constant clk_period_sys : time := 32ns;
+    constant clk_period_phg : time := clk_period/width_phases;
+    constant sine_period_info : time := clk_period * 32;
+    constant sine_period_carrier : time := clk_period;
+
+    component clock_generator is
+        generic (
+            clk_period : time := 10ns
+        );
+        port (
+            clk : out std_logic
+        );
+    end component;
+
+    component sine_generator is
+        generic (
+            sine_period : time := 32ns;
+            width : integer := n_bits;
+            width_samples : integer := 5 -- LOG2 OF THE VALUE
+        );
+        port (
+            qsine_uns : out std_logic_vector(width - 1 downto 0) := (others => '0');
+            qsine_sgn : out std_logic_vector(width - 1 downto 0) := (others => '0')
+        );
+    end component;
+
+    component am_generator is
+        generic (
+            sine_period_info, sine_period_carrier : time := 32ns;
+            width : integer := 8;
+            width_samples : integer := 5 -- LOG2 OF THE VALUE
+        );
+        port (
+            vout : out std_logic_vector(width - 1 downto 0) := (others => '0')
+        );
+    end component;
+
+    component npath is
+        generic (
+            width_phases : natural := 4;
+            width_coeff : natural := 4;
+            width : natural := 8
+        );
+        port (
+            clk, clk_phg : in std_logic;
+            vin : in std_logic_vector(width - 1 downto 0);
+            vout_s : out std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0) := (others => '0');
+            vout : out std_logic_vector(width - 1 downto 0)
+        );
+    end component;
+
+    component npath_two is
+        generic (
+            width_phases : natural := 4;
+            width_coeff : natural := 4;
+            width : natural := 8
+        );
+        port (
+            clk, clk_phg : in std_logic;
+            vin : in std_logic_vector(width - 1 downto 0);
+            vout_s : out std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0) := (others => '0');
+            vout : out std_logic_vector(width - 1 downto 0)
+        );
+    end component;
+
+    component phase_generator is
+        generic (
+            width_phases : natural := 4
+        );
+        port (
+            clk : in std_logic;
+            phg : out std_array(width_phases - 1 downto 0) := (others => '0')
+        );
+    end component;
+
+begin
+    clock : clock_generator generic map(clk_period => clk_period_sys) port map(clk => clk);
+    clock_phg : clock_generator generic map(clk_period => clk_period_phg) port map(clk => clk_phg);
+    phase : phase_generator generic map(width_phases => width_phases) port map(clk => clk_phg, phg => phg);
+    -- sine with period of 32ns
+    sine_gen : sine_generator generic map(sine_period => clk_period, width => width, width_samples => width_samples) port map(qsine_sgn => vin_sine);
+    -- amplitude modulation wave
+    am_gen : am_generator generic map(sine_period_info => sine_period_info, sine_period_carrier => sine_period_carrier, width => width, width_samples => width_samples) port map(vout => vin_am);
+    -- sine info
+    sine_gen_info : sine_generator generic map(sine_period => sine_period_info, width => width/2, width_samples => width_samples) port map(qsine_sgn => vout_info);
+    -- sine carrier
+    sine_gen_carrier : sine_generator generic map(sine_period => sine_period_carrier, width => width/2, width_samples => width_samples) port map(qsine_sgn => vout_carrier);
+
+    npath_gen : npath generic map(
+        width => width, width_phases => width_phases, width_coeff => width_coeff) port map(
+        clk => clk, clk_phg => clk_phg, vin => vin_sine, vout_s => vout_one_s, vout => vout_one);
+    npath_gen_am : npath generic map(
+        width => width, width_phases => width_phases, width_coeff => width_coeff) port map(
+        clk => clk, clk_phg => clk_phg, vin => vin_am, vout_s => vout_one_s_am, vout => vout_one_am);
+    npath_gen_two : npath_two generic map(
+        width => width, width_phases => width_phases, width_coeff => width_coeff) port map(
+        clk => clk, clk_phg => clk_phg, vin => vin_sine, vout_s => vout_two_s, vout => vout_two);
+    npath_gen_two_am : npath_two generic map(
+        width => width, width_phases => width_phases, width_coeff => width_coeff) port map(
+        clk => clk, clk_phg => clk_phg, vin => vin_am, vout_s => vout_two_s_am, vout => vout_two_am);
+
+end architecture behavior;

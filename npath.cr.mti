@@ -118,15 +118,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity reg
 -- Compiling architecture behavior of reg
 
-} {} {}} C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_basic.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir_basic.vhd
+} {} {}} C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/fir.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package npath_package
--- Compiling entity fir_basic
--- Compiling architecture behavior of fir_basic
+-- Compiling entity fir
+-- Compiling architecture behavior of fir
 
 } {} {}} C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/clock_generator.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/Jessiquinha/Documents/GitHub/NpathMixer/clock_generator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -356,7 +356,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity fir_small
 -- Compiling architecture behavior of fir_small
 
-} {} {}} C:/intelFPGA/20.1/fir_basic.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/20.1/fir_basic.vhd
+} {} {}} C:/intelFPGA/20.1/fir.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/20.1/fir.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -368,8 +368,8 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package MATH_REAL
 -- Loading package body fixed_generic_pkg
 -- Loading package npath_package
--- Compiling entity fir_basic
--- Compiling architecture behavior of fir_basic
+-- Compiling entity fir
+-- Compiling architecture behavior of fir
 
 } {} {}} C:/intelFPGA/20.1/clock_generator.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/20.1/clock_generator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

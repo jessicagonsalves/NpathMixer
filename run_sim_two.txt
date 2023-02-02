@@ -1,12 +1,12 @@
-vsim -gui work.fir_basic
-add wave -position insertpoint sim:/fir_basic/*
-force -freeze sim:/fir_basic/vin 00010001 0
+vsim -gui work.fir
+add wave -position insertpoint sim:/fir/*
+force -freeze sim:/fir/vin 00010001 0
 run
-force -freeze sim:/fir_basic/vin 00010101 0
+force -freeze sim:/fir/vin 00010101 0
 run
-force -freeze sim:/fir_basic/vin 00010100 0
+force -freeze sim:/fir/vin 00010100 0
 run
-force -freeze sim:/fir_basic/vin 00000101 0
+force -freeze sim:/fir/vin 00000101 0
 run
-force -freeze sim:/fir_basic/vin 00001101 0
+force -freeze sim:/fir/vin 00001101 0
 run

@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.npath_package.all;
 
-entity fir_basic is
+entity fir is
 	generic (
 		width : natural := 8;
 		width_coeff : natural := 4
@@ -13,9 +13,9 @@ entity fir_basic is
 		vin : in std_logic_vector(width - 1 downto 0);
 		vout : out std_logic_vector(width + log2(width_coeff) + n_integer - 1 downto 0) := (others => '0')
 	);
-end fir_basic;
+end fir;
 
-architecture behavior of fir_basic is
+architecture behavior of fir is
 
 	constant width_ext : natural := (width + n_rom) + log2(width_coeff);
 	type bits_array_t is array (natural range <>) of std_logic_vector(width - 1 downto 0);

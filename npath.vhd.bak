@@ -31,7 +31,7 @@ architecture behavior of npath is
     signal q_sum : matrix_slv_t(log2(width_phases) - 2 downto 0, width_phases/4 - 1 downto 0) := (others => (others => (others => '0')));
     signal q_out_s : std_logic_vector(vout_s'length - 1 downto 0) := (others => '0');
 
-    component fir_basic is
+    component fir is
         generic (
             width : natural := 8;
             width_coeff : natural := 4
@@ -95,7 +95,7 @@ begin
         end loop;
     end process tree;
 
-    filtering_out : fir_basic generic map(
+    filtering_out : fir generic map(
         width_coeff => width_coeff,
         width => width + log2(width_phases)
     ) port map(clk => clk, vin => q_sum(log2(width_coeff) - 2, 0), vout => q_out_s);

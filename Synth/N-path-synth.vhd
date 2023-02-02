@@ -284,14 +284,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_3 is
+entity fir_width10_width_coeff4_DW01_add_3 is
 
    port( A, B : in std_logic_vector (12 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (12 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_3;
+end fir_width10_width_coeff4_DW01_add_3;
 
-architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_3 is
+architecture SYN_cla of fir_width10_width_coeff4_DW01_add_3 is
 
    component INV3
       port( A : in std_logic;  Q : out std_logic);
@@ -412,14 +412,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_5 is
+entity fir_width10_width_coeff4_DW01_add_5 is
 
    port( A, B : in std_logic_vector (14 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (14 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_5;
+end fir_width10_width_coeff4_DW01_add_5;
 
-architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_5 is
+architecture SYN_cla of fir_width10_width_coeff4_DW01_add_5 is
 
    component XNR21
       port( A, B : in std_logic;  Q : out std_logic);
@@ -509,14 +509,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_6 is
+entity fir_width10_width_coeff4_DW01_add_6 is
 
    port( A, B : in std_logic_vector (14 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (14 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_6;
+end fir_width10_width_coeff4_DW01_add_6;
 
-architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_6 is
+architecture SYN_cla of fir_width10_width_coeff4_DW01_add_6 is
 
    component XNR21
       port( A, B : in std_logic;  Q : out std_logic);
@@ -606,14 +606,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_4 is
+entity fir_width10_width_coeff4_DW01_add_4 is
 
    port( A, B : in std_logic_vector (15 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (15 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_4;
+end fir_width10_width_coeff4_DW01_add_4;
 
-architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_4 is
+architecture SYN_cla of fir_width10_width_coeff4_DW01_add_4 is
 
    component INV3
       port( A : in std_logic;  Q : out std_logic);
@@ -705,15 +705,15 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW02_mult_0 is
+entity fir_width10_width_coeff4_DW02_mult_0 is
 
    port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (4
          downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (14
          downto 0));
 
-end fir_basic_width10_width_coeff4_DW02_mult_0;
+end fir_width10_width_coeff4_DW02_mult_0;
 
-architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_0 is
+architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_0 is
 
    component LOGIC0
       port( Q : out std_logic);
@@ -751,7 +751,7 @@ architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_0 is
       port( A, B, C : in std_logic;  Q : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_3
+   component fir_width10_width_coeff4_DW01_add_3
       port( A, B : in std_logic_vector (12 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (12 downto 0);  CO : out std_logic);
    end component;
@@ -814,7 +814,7 @@ begin
    S1_2_0 : ADD32 port map( A => A(2), B => CARRYB_1_0_port, CI => A(1), CO =>
                            CARRYB_2_0_port, S => A1_0_port);
    U16 : OAI212 port map( A => CARRYB_8_1_port, B => n34, C => n47, Q => n42);
-   FS_1 : fir_basic_width10_width_coeff4_DW01_add_3 port map( A(12) => n27,
+   FS_1 : fir_width10_width_coeff4_DW01_add_3 port map( A(12) => n27,
                            A(11) => n30, A(10) => A1_10_port, A(9) => A1_9_port
                            , A(8) => A1_8_port, A(7) => A1_7_port, A(6) =>
                            A1_6_port, A(5) => A1_5_port, A(4) => A1_4_port,
@@ -875,15 +875,15 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW02_mult_2 is
+entity fir_width10_width_coeff4_DW02_mult_2 is
 
    port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (6
          downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (16
          downto 0));
 
-end fir_basic_width10_width_coeff4_DW02_mult_2;
+end fir_width10_width_coeff4_DW02_mult_2;
 
-architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_2 is
+architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_2 is
 
    component LOGIC0
       port( Q : out std_logic);
@@ -913,7 +913,7 @@ architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_2 is
       port( A, B : in std_logic;  Q : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_5
+   component fir_width10_width_coeff4_DW01_add_5
       port( A, B : in std_logic_vector (14 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (14 downto 0);  CO : out std_logic);
    end component;
@@ -996,7 +996,7 @@ begin
                            CARRYB_3_3_port, S => SUMB_3_3_port);
    S1_2_0 : ADD32 port map( A => A(2), B => CARRYB_1_0_port, CI => A(1), CO =>
                            CARRYB_2_0_port, S => A1_0_port);
-   FS_1 : fir_basic_width10_width_coeff4_DW01_add_5 port map( A(14) => A(9),
+   FS_1 : fir_width10_width_coeff4_DW01_add_5 port map( A(14) => A(9),
                            A(13) => A(9), A(12) => CARRYB_9_4_port, A(11) =>
                            A1_11_port, A(10) => A1_10_port, A(9) => A1_9_port,
                            A(8) => A1_8_port, A(7) => A1_7_port, A(6) =>
@@ -1060,15 +1060,15 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW02_mult_3 is
+entity fir_width10_width_coeff4_DW02_mult_3 is
 
    port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (6
          downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (16
          downto 0));
 
-end fir_basic_width10_width_coeff4_DW02_mult_3;
+end fir_width10_width_coeff4_DW02_mult_3;
 
-architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_3 is
+architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_3 is
 
    component LOGIC0
       port( Q : out std_logic);
@@ -1098,7 +1098,7 @@ architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_3 is
       port( A, B : in std_logic;  Q : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_6
+   component fir_width10_width_coeff4_DW01_add_6
       port( A, B : in std_logic_vector (14 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (14 downto 0);  CO : out std_logic);
    end component;
@@ -1181,7 +1181,7 @@ begin
                            CARRYB_3_3_port, S => SUMB_3_3_port);
    S1_2_0 : ADD32 port map( A => A(2), B => CARRYB_1_0_port, CI => A(1), CO =>
                            CARRYB_2_0_port, S => A1_0_port);
-   FS_1 : fir_basic_width10_width_coeff4_DW01_add_6 port map( A(14) => A(9),
+   FS_1 : fir_width10_width_coeff4_DW01_add_6 port map( A(14) => A(9),
                            A(13) => A(9), A(12) => CARRYB_9_4_port, A(11) =>
                            A1_11_port, A(10) => A1_10_port, A(9) => A1_9_port,
                            A(8) => A1_8_port, A(7) => A1_7_port, A(6) =>
@@ -1245,15 +1245,15 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW02_mult_1 is
+entity fir_width10_width_coeff4_DW02_mult_1 is
 
    port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (7
          downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (17
          downto 0));
 
-end fir_basic_width10_width_coeff4_DW02_mult_1;
+end fir_width10_width_coeff4_DW02_mult_1;
 
-architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_1 is
+architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_1 is
 
    component LOGIC0
       port( Q : out std_logic);
@@ -1287,7 +1287,7 @@ architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_1 is
       port( A, B : in std_logic;  Q : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_4
+   component fir_width10_width_coeff4_DW01_add_4
       port( A, B : in std_logic_vector (15 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (15 downto 0);  CO : out std_logic);
    end component;
@@ -1340,7 +1340,7 @@ begin
                            CARRYB_3_0_port, S => A1_1_port);
    S1_2_0 : ADD32 port map( A => A(2), B => n35, CI => A(1), CO =>
                            CARRYB_2_0_port, S => A1_0_port);
-   FS_1 : fir_basic_width10_width_coeff4_DW01_add_4 port map( A(15) => A(9),
+   FS_1 : fir_width10_width_coeff4_DW01_add_4 port map( A(15) => A(9),
                            A(14) => A(9), A(13) => n29, A(12) => A1_12_port,
                            A(11) => A1_11_port, A(10) => A1_10_port, A(9) =>
                            A1_9_port, A(8) => A1_8_port, A(7) => A1_7_port,
@@ -1410,14 +1410,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_2 is
+entity fir_width10_width_coeff4_DW01_add_2 is
 
    port( A, B : in std_logic_vector (17 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (17 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_2;
+end fir_width10_width_coeff4_DW01_add_2;
 
-architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_add_2 is
+architecture SYN_rpl of fir_width10_width_coeff4_DW01_add_2 is
 
    component INV3
       port( A : in std_logic;  Q : out std_logic);
@@ -1489,14 +1489,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_1 is
+entity fir_width10_width_coeff4_DW01_add_1 is
 
    port( A, B : in std_logic_vector (17 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (17 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_1;
+end fir_width10_width_coeff4_DW01_add_1;
 
-architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_add_1 is
+architecture SYN_rpl of fir_width10_width_coeff4_DW01_add_1 is
 
    component INV3
       port( A : in std_logic;  Q : out std_logic);
@@ -1568,14 +1568,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_add_0 is
+entity fir_width10_width_coeff4_DW01_add_0 is
 
    port( A, B : in std_logic_vector (18 downto 0);  CI : in std_logic;  SUM :
          out std_logic_vector (18 downto 0);  CO : out std_logic);
 
-end fir_basic_width10_width_coeff4_DW01_add_0;
+end fir_width10_width_coeff4_DW01_add_0;
 
-architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_add_0 is
+architecture SYN_rpl of fir_width10_width_coeff4_DW01_add_0 is
 
    component INV3
       port( A : in std_logic;  Q : out std_logic);
@@ -1650,14 +1650,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4_DW01_inc_0 is
+entity fir_width10_width_coeff4_DW01_inc_0 is
 
    port( A : in std_logic_vector (12 downto 0);  SUM : out std_logic_vector (12
          downto 0));
 
-end fir_basic_width10_width_coeff4_DW01_inc_0;
+end fir_width10_width_coeff4_DW01_inc_0;
 
-architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_inc_0 is
+architecture SYN_rpl of fir_width10_width_coeff4_DW01_inc_0 is
 
    component INV3
       port( A : in std_logic;  Q : out std_logic);
@@ -1710,14 +1710,14 @@ use IEEE.std_logic_1164.all;
 
 use work.CONV_PACK_npath_width8_width_coeff4_width_phases4.all;
 
-entity fir_basic_width10_width_coeff4 is
+entity fir_width10_width_coeff4 is
 
    port( clk : in std_logic;  vin : in std_logic_vector (9 downto 0);  vout :
          out std_logic_vector (12 downto 0));
 
-end fir_basic_width10_width_coeff4;
+end fir_width10_width_coeff4;
 
-architecture SYN_behavior of fir_basic_width10_width_coeff4 is
+architecture SYN_behavior of fir_width10_width_coeff4 is
 
    component LOGIC0
       port( Q : out std_logic);
@@ -1743,46 +1743,46 @@ architecture SYN_behavior of fir_basic_width10_width_coeff4 is
       port( A, B, C : in std_logic;  Q : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW02_mult_0
+   component fir_width10_width_coeff4_DW02_mult_0
       port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (4
             downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (14
             downto 0));
    end component;
    
-   component fir_basic_width10_width_coeff4_DW02_mult_2
+   component fir_width10_width_coeff4_DW02_mult_2
       port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (6
             downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (16
             downto 0));
    end component;
    
-   component fir_basic_width10_width_coeff4_DW02_mult_3
+   component fir_width10_width_coeff4_DW02_mult_3
       port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (6
             downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (16
             downto 0));
    end component;
    
-   component fir_basic_width10_width_coeff4_DW02_mult_1
+   component fir_width10_width_coeff4_DW02_mult_1
       port( A : in std_logic_vector (9 downto 0);  B : in std_logic_vector (7
             downto 0);  TC : in std_logic;  PRODUCT : out std_logic_vector (17
             downto 0));
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_2
+   component fir_width10_width_coeff4_DW01_add_2
       port( A, B : in std_logic_vector (17 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (17 downto 0);  CO : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_1
+   component fir_width10_width_coeff4_DW01_add_1
       port( A, B : in std_logic_vector (17 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (17 downto 0);  CO : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_add_0
+   component fir_width10_width_coeff4_DW01_add_0
       port( A, B : in std_logic_vector (18 downto 0);  CI : in std_logic;  SUM
             : out std_logic_vector (18 downto 0);  CO : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4_DW01_inc_0
+   component fir_width10_width_coeff4_DW01_inc_0
       port( A : in std_logic_vector (12 downto 0);  SUM : out std_logic_vector
             (12 downto 0));
    end component;
@@ -2065,7 +2065,7 @@ begin
                            );
    U7 : OAI212 port map( A => n33_port, B => n21_port, C => n121, Q => vout(11)
                            );
-   add_66 : fir_basic_width10_width_coeff4_DW01_inc_0 port map( A(12) =>
+   add_66 : fir_width10_width_coeff4_DW01_inc_0 port map( A(12) =>
                            q_sum_1_0_19_port, A(11) => q_sum_1_0_19_port, A(10)
                            => q_sum_1_0_17_port, A(9) => q_sum_1_0_16_port,
                            A(8) => q_sum_1_0_15_port, A(7) => q_sum_1_0_14_port
@@ -2077,7 +2077,7 @@ begin
                            SUM(9) => N79, SUM(8) => N78, SUM(7) => N77, SUM(6)
                            => N76, SUM(5) => N75, SUM(4) => N74, SUM(3) => N73,
                            SUM(2) => N72, SUM(1) => N71, SUM(0) => N70);
-   add_58 : fir_basic_width10_width_coeff4_DW01_add_0 port map( A(18) =>
+   add_58 : fir_width10_width_coeff4_DW01_add_0 port map( A(18) =>
                            q_sum_0_0_19_port, A(17) => q_sum_0_0_19_port, A(16)
                            => q_sum_0_0_16_port, A(15) => q_sum_0_0_15_port,
                            A(14) => q_sum_0_0_14_port, A(13) =>
@@ -2111,7 +2111,7 @@ begin
                            q_sum_1_0_4_port, SUM(3) => q_sum_1_0_3_port, SUM(2)
                            => q_sum_1_0_2_port, SUM(1) => q_sum_1_0_1_port,
                            SUM(0) => q_sum_1_0_0_port, CO => n_1195);
-   add_50_I3 : fir_basic_width10_width_coeff4_DW01_add_1 port map( A(17) =>
+   add_50_I3 : fir_width10_width_coeff4_DW01_add_1 port map( A(17) =>
                            vec_2w_2_17_port, A(16) => vec_2w_2_16_port, A(15)
                            => vec_2w_2_15_port, A(14) => vec_2w_2_14_port,
                            A(13) => vec_2w_2_13_port, A(12) => vec_2w_2_12_port
@@ -2143,7 +2143,7 @@ begin
                            q_sum_0_1_3_port, SUM(2) => q_sum_0_1_2_port, SUM(1)
                            => q_sum_0_1_1_port, SUM(0) => q_sum_0_1_0_port, CO
                            => n_1196);
-   add_50 : fir_basic_width10_width_coeff4_DW01_add_2 port map( A(17) =>
+   add_50 : fir_width10_width_coeff4_DW01_add_2 port map( A(17) =>
                            vec_2w_0_17_port, A(16) => vec_2w_0_16_port, A(15)
                            => vec_2w_0_15_port, A(14) => vec_2w_0_14_port,
                            A(13) => vec_2w_0_13_port, A(12) => vec_2w_0_12_port
@@ -2175,7 +2175,7 @@ begin
                            q_sum_0_0_3_port, SUM(2) => q_sum_0_0_2_port, SUM(1)
                            => q_sum_0_0_1_port, SUM(0) => q_sum_0_0_0_port, CO
                            => n_1197);
-   mult_37 : fir_basic_width10_width_coeff4_DW02_mult_1 port map( A(9) =>
+   mult_37 : fir_width10_width_coeff4_DW02_mult_1 port map( A(9) =>
                            q_s_3_9_port, A(8) => q_s_3_8_port, A(7) =>
                            q_s_3_7_port, A(6) => q_s_3_6_port, A(5) =>
                            q_s_3_5_port, A(4) => q_s_3_4_port, A(3) =>
@@ -2191,7 +2191,7 @@ begin
                            PRODUCT(6) => N24, PRODUCT(5) => N23, PRODUCT(4) =>
                            N22, PRODUCT(3) => N21, PRODUCT(2) => N20,
                            PRODUCT(1) => N19, PRODUCT(0) => N18);
-   mult_34 : fir_basic_width10_width_coeff4_DW02_mult_3 port map( A(9) =>
+   mult_34 : fir_width10_width_coeff4_DW02_mult_3 port map( A(9) =>
                            vin(9), A(8) => vin(8), A(7) => vin(7), A(6) =>
                            vin(6), A(5) => vin(5), A(4) => vin(4), A(3) =>
                            vin(3), A(2) => vin(2), A(1) => vin(1), A(0) =>
@@ -2205,7 +2205,7 @@ begin
                            , PRODUCT(5) => N6, PRODUCT(4) => N5, PRODUCT(3) =>
                            N4, PRODUCT(2) => N3, PRODUCT(1) => N2, PRODUCT(0)
                            => N1);
-   mult_37_I2 : fir_basic_width10_width_coeff4_DW02_mult_2 port map( A(9) =>
+   mult_37_I2 : fir_width10_width_coeff4_DW02_mult_2 port map( A(9) =>
                            q_s_2_9_port, A(8) => q_s_2_8_port, A(7) =>
                            q_s_2_7_port, A(6) => q_s_2_6_port, A(5) =>
                            q_s_2_5_port, A(4) => q_s_2_4_port, A(3) =>
@@ -2221,7 +2221,7 @@ begin
                            N41, PRODUCT(4) => N40, PRODUCT(3) => N39,
                            PRODUCT(2) => N38, PRODUCT(1) => N37, PRODUCT(0) =>
                            N36);
-   mult_37_I3 : fir_basic_width10_width_coeff4_DW02_mult_0 port map( A(9) =>
+   mult_37_I3 : fir_width10_width_coeff4_DW02_mult_0 port map( A(9) =>
                            q_s_1_9_port, A(8) => q_s_1_8_port, A(7) =>
                            q_s_1_7_port, A(6) => q_s_1_6_port, A(5) =>
                            q_s_1_5_port, A(4) => q_s_1_4_port, A(3) =>
@@ -2336,7 +2336,7 @@ architecture SYN_behavior of npath_width8_width_coeff4_width_phases4 is
             : out std_logic_vector (8 downto 0);  CO : out std_logic);
    end component;
    
-   component fir_basic_width10_width_coeff4
+   component fir_width10_width_coeff4
       port( clk : in std_logic;  vin : in std_logic_vector (9 downto 0);  vout
             : out std_logic_vector (12 downto 0));
    end component;
@@ -2477,7 +2477,7 @@ begin
                            => reg_out_array_3_1_port, QN => n_1243);
    reg_out_array_reg_3_0_inst : DF3 port map( D => vin(0), C => phg_3_port, Q
                            => reg_out_array_3_0_port, QN => n_1244);
-   filtering_out : fir_basic_width10_width_coeff4 port map( clk => clk, vin(9)
+   filtering_out : fir_width10_width_coeff4 port map( clk => clk, vin(9)
                            => q_sum_0_0_9_port, vin(8) => q_sum_0_0_9_port,
                            vin(7) => q_sum_0_0_7_port, vin(6) =>
                            q_sum_0_0_6_port, vin(5) => q_sum_0_0_5_port, vin(4)

@@ -9,32 +9,32 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture SYN_cla of npath_width8_width_coeff4_width_phases4_DW01_inc_1
 -- Compiling entity npath_width8_width_coeff4_width_phases4_DW01_sub_0
 -- Compiling architecture SYN_rpl of npath_width8_width_coeff4_width_phases4_DW01_sub_0
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_3
--- Compiling architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_3
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_5
--- Compiling architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_5
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_6
--- Compiling architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_6
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_4
--- Compiling architecture SYN_cla of fir_basic_width10_width_coeff4_DW01_add_4
--- Compiling entity fir_basic_width10_width_coeff4_DW02_mult_0
--- Compiling architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_0
--- Compiling entity fir_basic_width10_width_coeff4_DW02_mult_2
--- Compiling architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_2
--- Compiling entity fir_basic_width10_width_coeff4_DW02_mult_3
--- Compiling architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_3
--- Compiling entity fir_basic_width10_width_coeff4_DW02_mult_1
--- Compiling architecture SYN_csa of fir_basic_width10_width_coeff4_DW02_mult_1
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_2
--- Compiling architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_add_2
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_1
--- Compiling architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_add_1
--- Compiling entity fir_basic_width10_width_coeff4_DW01_add_0
--- Compiling architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_add_0
--- Compiling entity fir_basic_width10_width_coeff4_DW01_inc_0
--- Compiling architecture SYN_rpl of fir_basic_width10_width_coeff4_DW01_inc_0
--- Compiling entity fir_basic_width10_width_coeff4
--- Compiling architecture SYN_behavior of fir_basic_width10_width_coeff4
+-- Compiling entity fir_width10_width_coeff4_DW01_add_3
+-- Compiling architecture SYN_cla of fir_width10_width_coeff4_DW01_add_3
+-- Compiling entity fir_width10_width_coeff4_DW01_add_5
+-- Compiling architecture SYN_cla of fir_width10_width_coeff4_DW01_add_5
+-- Compiling entity fir_width10_width_coeff4_DW01_add_6
+-- Compiling architecture SYN_cla of fir_width10_width_coeff4_DW01_add_6
+-- Compiling entity fir_width10_width_coeff4_DW01_add_4
+-- Compiling architecture SYN_cla of fir_width10_width_coeff4_DW01_add_4
+-- Compiling entity fir_width10_width_coeff4_DW02_mult_0
+-- Compiling architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_0
+-- Compiling entity fir_width10_width_coeff4_DW02_mult_2
+-- Compiling architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_2
+-- Compiling entity fir_width10_width_coeff4_DW02_mult_3
+-- Compiling architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_3
+-- Compiling entity fir_width10_width_coeff4_DW02_mult_1
+-- Compiling architecture SYN_csa of fir_width10_width_coeff4_DW02_mult_1
+-- Compiling entity fir_width10_width_coeff4_DW01_add_2
+-- Compiling architecture SYN_rpl of fir_width10_width_coeff4_DW01_add_2
+-- Compiling entity fir_width10_width_coeff4_DW01_add_1
+-- Compiling architecture SYN_rpl of fir_width10_width_coeff4_DW01_add_1
+-- Compiling entity fir_width10_width_coeff4_DW01_add_0
+-- Compiling architecture SYN_rpl of fir_width10_width_coeff4_DW01_add_0
+-- Compiling entity fir_width10_width_coeff4_DW01_inc_0
+-- Compiling architecture SYN_rpl of fir_width10_width_coeff4_DW01_inc_0
+-- Compiling entity fir_width10_width_coeff4
+-- Compiling architecture SYN_behavior of fir_width10_width_coeff4
 -- Compiling entity npath_width8_width_coeff4_width_phases4
 -- Compiling architecture SYN_behavior of npath_width8_width_coeff4_width_phases4
 

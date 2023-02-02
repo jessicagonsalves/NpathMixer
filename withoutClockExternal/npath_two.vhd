@@ -10,7 +10,8 @@ entity npath_two is
         width : natural := 8
     );
     port (
-        clk, clk_phg : in std_logic;
+        clk : in std_logic;
+        phg : in std_array(width_phases - 1 downto 0) := (others => '0');
         vin : in std_logic_vector(width - 1 downto 0);
         vout_s : out std_logic_vector(width + log2(width_coeff) + log2(width_phases) + n_integer - 1 downto 0) := (others => '0');
         vout : out std_logic_vector(width - 1 downto 0)
@@ -44,24 +45,6 @@ architecture behavior of npath_two is
     end component;
 
 begin
-
-    phase_gen : process (clk_phg)
-        variable counter : natural;
-    begin
-        if (clk_phg'event and clk_phg = '0') then
-            for i in 0 to width_phases - 1 loop
-                if i = counter then
-                    phg(i) <= '1';
-                else
-                    phg(i) <= '0';
-                end if;
-            end loop;
-            counter := counter + 1;
-            if (counter = width_phases) then
-                counter := 0;
-            end if;
-        end if;
-    end process phase_gen;
 
     -- arrangment two
     filtering : for i in 0 to width_phases - 1 generate
